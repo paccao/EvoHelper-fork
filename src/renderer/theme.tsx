@@ -23,8 +23,8 @@ export const themeConfig: ThemeOptions = {
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
-          background: "#141D28"
-        }
+          background: '#141D28',
+        },
       },
     },
   },

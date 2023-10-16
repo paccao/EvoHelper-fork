@@ -10,6 +10,7 @@
  */
 import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, globalShortcut } from 'electron';
+import fs from 'fs/promises';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 import { loadTevefData } from './maps/evo/load';
@@ -18,7 +19,7 @@ import { executeCommand } from './dirt/keyboard';
 let mainWindow: BrowserWindow | null = null;
 
 ipcMain.on('ipc', async (event, arg) => {
-  const data = await loadTevefData("C:\\Users\\Shiro\\Documents\\Warcraft III\\CustomMapData\\Twilight's Eve Evo\\shr#21471");
+  const data = await loadTevefData(arg);
   event.reply('ipc', data);
 });
 
@@ -29,7 +30,27 @@ ipcMain.on('load', async (event, arg) => {
       await executeCommand(command);
     }
   });
-})
+});
+
+ipcMain.on('settings_read', async (event) => {
+  const settings = await fs.readFile(
+    `${app.getPath('userData')}\\settings.json`,
+    'utf-8',
+  );
+  event.reply('settings_read', JSON.parse(settings));
+});
+
+ipcMain.on('settings_write', async (event, arg) => {
+  try {
+    await fs.writeFile(
+      `${app.getPath('userData')}\\settings.json`,
+      JSON.stringify(arg),
+    );
+    event.reply('settings_write', true);
+  } catch (e) {
+    event.reply('settings_write', false);
+  }
+});
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -106,7 +127,6 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-
 };
 
 /**

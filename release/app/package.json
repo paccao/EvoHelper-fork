@@ -1,12 +1,9 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "4.6.0",
-  "description": "A foundation for scalable desktop apps",
-  "license": "MIT",
+  "name": "wc3loader",
+  "version": "0.1.0",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://github.com/electron-react-boilerplate"
+    "name": "ArgentumHeart",
+    "url": "https://github.com/ArgentumHeart/WC3RPGLoader"
   },
   "main": "./dist/main/main.js",
   "scripts": {
@@ -14,5 +11,7 @@
     "postinstall": "npm run rebuild && npm run link-modules",
     "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+
+  }
 }

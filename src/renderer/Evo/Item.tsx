@@ -6,31 +6,30 @@ import { evoItems } from './items';
 import ItemCard from './ItemCard';
 import { iconFromId } from '../../icons/icons';
 
-export const EvoItemRenderer: FC<{id?: string}> = ({ id }) => {
+export const EvoItemRenderer: FC<{ id?: string }> = ({ id }) => {
   if (!id) {
     return (
       <Avatar sx={{ bgcolor: grey[800] }} variant="rounded">
-        {" "}
+        {' '}
       </Avatar>
-    )
+    );
   }
   if (!evoItems.hasOwnProperty(id)) {
     return (
       <Tooltip sx={{ boxShadow: 3 }} title={id} placement="right-start">
-        <Avatar
-          sx={{ bgcolor: grey[500] }}
-          variant="rounded">
+        <Avatar sx={{ bgcolor: grey[500] }} variant="rounded">
           {id[0]}
         </Avatar>
       </Tooltip>
-    )
+    );
   }
   return (
-    <Tooltip sx={{ boxShadow: 3 }} title={<ItemCard item={evoItems[id]}/>} placement="right-start">
-      <Avatar
-        variant="rounded"
-        src={iconFromId(evoItems[id].icon)}
-      />
+    <Tooltip
+      sx={{ boxShadow: 3 }}
+      title={<ItemCard item={evoItems[id]} />}
+      placement="right-start"
+    >
+      <Avatar variant="rounded" src={iconFromId(evoItems[id].icon)} />
     </Tooltip>
-  )
-}
+  );
+};

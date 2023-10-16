@@ -1,11 +1,13 @@
 import { FC } from 'react';
-import { EvoStash } from './Stash';
 import Grid from '@mui/material/Grid';
 import { useParams } from 'react-router-dom';
-import { useCharacterContext } from '../../context';
 import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import { useCharacterContext } from '../../context';
+import { EvoStash } from './Stash';
 
-export const Character: FC = ()  => {
+export const Character: FC = () => {
   const { getCharacterById, onLoadClick } = useCharacterContext();
   const { id } = useParams();
 
@@ -16,13 +18,18 @@ export const Character: FC = ()  => {
 
   return (
     <div>
-      <h3>{character.hero} {character.level && ` - ${character.level} level`}</h3>
+      <h3>
+        {character.hero} {character.level && ` - ${character.level} level`}
+      </h3>
       <h5>Gold: {character.gold}</h5>
       <h5>PowerShards: {character.powerShards}</h5>
       <Grid container>
-        <Grid item sx={{
-          marginRight: '20px',
-        }}>
+        <Grid
+          item
+          sx={{
+            marginRight: '20px',
+          }}
+        >
           <EvoStash itemIds={character.inventory} />
         </Grid>
         <Grid item>
@@ -45,9 +52,12 @@ export const Character: FC = ()  => {
         </Grid>
       </Grid>
 
-      <Button onClick={()=> onLoadClick(character)}>
-        Load
-      </Button>
+      <Divider />
+      <Typography>
+        Press load, it will set hotkey for A button. Head to wc3 and press A.
+        Let it do its thing.
+      </Typography>
+      <Button onClick={() => onLoadClick(character)}>Load</Button>
     </div>
   );
-}
+};

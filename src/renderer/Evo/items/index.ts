@@ -1,6 +1,3 @@
-import { EvoItemRestictions } from '../restrictions';
-import { EvoRarity } from '../rarity';
-import { Icon } from '../../../icons/icons';
 import { weaponsMasterItems } from './forging/weaponsMaster';
 import { armorsmithItems } from './merchants/armorsmith';
 import { icyHighlandItems } from './easy/icyHighland';
@@ -23,46 +20,41 @@ import { puzzleItems } from './hard/puzzle';
 import { imp3Items } from './imp/imp3';
 import { fragmentedSoul } from './merchants/fragmentedSoul';
 import { ancientSoul } from './merchants/ancientSoul';
+import { banditLordItems } from './merchants/banditLord';
+import { pieces } from './forging/pieces';
+import { angelNature } from './forging/angelNature';
+import { angelSunItems } from './forging/angelSun';
 
-export interface EvoItem {
-  id: string;
-  restriction: EvoItemRestictions;
-  rarity: EvoRarity;
-  icon: Icon;
-  description?: string;
-  effects: string[];
-  source: string;
-  sourceShort?: string;
-  crafting?: string[];
-}
-
-export const evoItems = Object.assign(
-  {},
+export const evoItems = {
+  ...pieces,
   // vendors
-  weaponsDealerItems,
-  armorsmithItems,
-  fragmentedSoul,
-  ancientSoul,
+  ...weaponsDealerItems,
+  ...armorsmithItems,
+  ...fragmentedSoul,
+  ...ancientSoul,
+  ...banditLordItems,
 
-  weaponsMasterItems,
-  ancientSoulItems,
-  bobBuilderItems,
-  magicWizardItems,
-  angelCloudsItems,
+  ...weaponsMasterItems,
+  ...ancientSoulItems,
+  ...bobBuilderItems,
+  ...magicWizardItems,
+  ...angelCloudsItems,
+  ...angelNature,
+  ...angelSunItems,
   //
-  icyHighlandItems,
+  ...icyHighlandItems,
 
-  goldmineItems,
-  centaurItems,
-  puzzleItems,
+  ...goldmineItems,
+  ...centaurItems,
+  ...puzzleItems,
 
-  nagaItems,
-  sewersItems,
-  hell1Items,
-  hell2Items,
-  hell3Items,
-  hell4Items,
-  imp1Items,
-  imp2Items,
-  imp3Items,
-);
+  ...nagaItems,
+  ...sewersItems,
+  ...hell1Items,
+  ...hell2Items,
+  ...hell3Items,
+  ...hell4Items,
+  ...imp1Items,
+  ...imp2Items,
+  ...imp3Items,
+};

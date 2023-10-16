@@ -6,8 +6,8 @@ export const EvoStash: FC<{ itemIds: string[] }> = (props) => {
   return (
     <>
       {itemIds.map((id, index) => (
-          <EvoItemRenderer key={id + index} id={id}/>
+        <EvoItemRenderer key={id + index} id={id} />
       ))}
     </>
-  )
-}
+  );
+};
