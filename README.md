@@ -3,6 +3,7 @@
 App to load characters for Twilight's Eve in WC3. You can download the latest version in releases.
 
 Set your wc3 path and battle tag, then hit 'Refresh' button to load your classes.
+
 Current hotkey: ``A`` This will be configurable in the future.
 
 ## Starting Development 
