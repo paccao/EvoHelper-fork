@@ -32,7 +32,7 @@ export default function App() {
               position: 'relative',
             }}
           >
-            <Box>
+            <Box sx={{ overflowY: 'auto' }}>
               <Box
                 sx={{
                   padding: '20px',
