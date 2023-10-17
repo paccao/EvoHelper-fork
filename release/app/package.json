@@ -12,6 +12,6 @@
     "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
   },
   "dependencies": {
-
+    "@nut-tree/nut-js": "^3.1.2"
   }
 }

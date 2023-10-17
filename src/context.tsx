@@ -6,8 +6,8 @@ import {
   useEffect,
   useState,
 } from 'react';
-import { Class } from '../../electron-typescript-react-mui/src/main/evo/load';
 import { useSettingsContext } from './settingsContext';
+import { Class } from './main/maps/evo/load';
 
 interface CharacterContext {
   allClasses: Class[];
@@ -53,7 +53,7 @@ export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
     getCharacterById,
   };
   useEffect(() => {
-    window.electron.ipcRenderer.on('ipc', (arg) => {
+    window.electron.ipcRenderer.on('ipc', (arg: any) => {
       // @ts-ignore
       setAllClasses(arg);
     });

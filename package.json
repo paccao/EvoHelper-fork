@@ -70,7 +70,6 @@
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "electron": "^26.2.1",
-    "@nut-tree/nut-js": "^3.1.2",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^6.1.4",
