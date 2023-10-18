@@ -51,9 +51,20 @@ export const imp2Items: { [id: string]: EvoItem } = {
     source: 'Dragon Fortress',
     sourceShort: 'Imp 2',
   },
+  // keeping both currently. Might delete Helm later.
   'Helm of Domination': {
     id: 'Helm of Domination',
-    restriction: EvoItemRestictions.SWORDSMAN,
+    restriction: EvoItemRestictions.TANK,
+    rarity: EvoRarity.LEGENDARY,
+    icon: 'BTNKingArthas',
+    description: '',
+    effects: ['+340 Armor'],
+    source: 'Dragon Fortress',
+    sourceShort: 'Imp 2',
+  },
+  'Wrath of the Lich King': {
+    id: 'Wrath of the Lich King',
+    restriction: EvoItemRestictions.TANK,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNKingArthas',
     description: '',
