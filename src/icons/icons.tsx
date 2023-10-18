@@ -180,6 +180,7 @@ import { angelFireIcons } from './angelFireIcons';
 import { flameIcons } from './angelFlame';
 import { angelNatureIcons } from './angelNature';
 import { angelSunIcons } from './angelSun';
+import { godlyIcons } from './godlyIcons';
 
 const icons = {
   EmptySlotIcon,
@@ -352,6 +353,7 @@ const icons = {
   ...banditLordIcons,
 
   ...mysteryIcons,
+  ...godlyIcons,
   ...m1Icons,
   ...angelNatureIcons,
   ...angelSunIcons,
