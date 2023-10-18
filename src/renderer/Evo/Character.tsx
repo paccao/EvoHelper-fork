@@ -53,11 +53,12 @@ export const Character: FC = () => {
       </Grid>
 
       <Divider />
-      <Typography>
-        Press load, it will set hotkey for A button. Head to wc3 and press A.
-        Let it do its thing.
-      </Typography>
-      <Button onClick={() => onLoadClick(character)}>Load</Button>
+      <Typography>Press Load - it will set hotkey for A button.</Typography>
+      <Typography>Head to wc3 and press A.</Typography>
+      <Typography>Let it do its thing.</Typography>
+      <Button variant="outlined" onClick={() => onLoadClick(character)}>
+        Load
+      </Button>
     </div>
   );
 };

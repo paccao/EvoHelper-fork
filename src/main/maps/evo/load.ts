@@ -1,35 +1,7 @@
 import fs from 'fs/promises';
-import classesList from './classes.json';
+import { allClasses } from '../../../constants/evo/classes';
 
-export const loadTevefData = async (path: string) => {
-  const potentialClasses = await fs.readdir(path);
-  const classes = potentialClasses.filter((el) => classesList.includes(el));
-
-  const data = await Promise.all(
-    classes.map((cl) => loadClass(`${path}\\${cl}`)),
-  );
-
-  return data;
-};
-
-const loadClass = async (path: string) => {
-  const classDir = await fs.readdir(path);
-  const name = classDir
-    .filter((el) => el.indexOf('[Level ') !== -1)
-    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
-    .pop();
-
-  if (!name) {
-    return null;
-  }
-
-  const classFile = await fs.readFile(`${path}\\${name}`, 'utf-8');
-
-  return Object.assign(parseClassFile(classFile), {
-    level: name?.slice(6, name?.length - 5),
-  });
-};
-
+type Loadout = string[];
 export interface Class {
   hero: string;
   gold: string;
@@ -40,40 +12,8 @@ export interface Class {
   code: string;
 }
 
-type Loadout = string[];
-
-const parseClassFile = (str: string): Class => {
-  return {
-    hero: extractKey(str, 'Hero: ', '"'),
-    gold: extractKey(str, 'Gold: ', '"'),
-    powerShards: extractKey(str, 'Shard: ', '"'),
-    code: extractKey(str, '"-l ', '"'),
-    inventory: [...Array(6)].map((_, index) => {
-      return extractItem(str, `"Item ${index + 1}: `).trim();
-    }),
-    stashes: [...Array(6)].map((_, stashIndex) => {
-      return [...Array(6)].map((_, index) => {
-        return extractItem(
-          str,
-          `"Stash${stashIndex ? stashIndex + 1 : ''} Item ${index + 1}: `,
-        ).trim();
-      });
-    }),
-  };
-};
-
-const extractKey = (str: string, key: string, end = '"'): string => {
-  if (str.indexOf(key) == -1 || str.indexOf(end) == -1) {
-    return '';
-  }
-  return str.slice(
-    str.indexOf(key) + key.length,
-    str.indexOf(end, str.indexOf(key) + 1),
-  );
-};
-
 const extractItem = (str: string, key: string, end = '" )'): string => {
-  if (str.indexOf(key) == -1 || str.indexOf(end) == -1) {
+  if (str.indexOf(key) === -1 || str.indexOf(end) === -1) {
     return '';
   }
   const item = str
@@ -88,4 +28,62 @@ const extractItem = (str: string, key: string, end = '" )'): string => {
   }
 
   return item;
+};
+
+const extractKey = (str: string, key: string, end = '"'): string => {
+  if (str.indexOf(key) === -1 || str.indexOf(end) === -1) {
+    return '';
+  }
+  return str.slice(
+    str.indexOf(key) + key.length,
+    str.indexOf(end, str.indexOf(key) + 1),
+  );
+};
+
+const parseClassFile = (str: string): Class => {
+  return {
+    hero: extractKey(str, 'Hero: ', '"'),
+    gold: extractKey(str, 'Gold: ', '"'),
+    powerShards: extractKey(str, 'Shard: ', '"'),
+    code: extractKey(str, '"-l ', '"'),
+    inventory: [...Array(6)].map((_, index) => {
+      return extractItem(str, `"Item ${index + 1}: `).trim();
+    }),
+    stashes: [...Array(6)].map((_, stashIndex) => {
+      return [...Array(6)].map((__, index) => {
+        return extractItem(
+          str,
+          `"Stash${stashIndex ? stashIndex + 1 : ''} Item ${index + 1}: `,
+        ).trim();
+      });
+    }),
+  };
+};
+const loadClass = async (path: string) => {
+  const classDir = await fs.readdir(path);
+  const name = classDir
+    .filter((el) => el.indexOf('[Level ') !== -1)
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+    .pop();
+
+  if (!name) {
+    return null;
+  }
+
+  const classFile = await fs.readFile(`${path}\\${name}`, 'utf-8');
+
+  return Object.assign(parseClassFile(classFile), {
+    level: name?.slice(6, name && name.length ? name.length - 5 : 0),
+  });
+};
+
+export const loadTevefData = async (path: string) => {
+  const potentialClasses = await fs.readdir(path);
+  const classes = potentialClasses.filter((el) => allClasses.includes(el));
+
+  const data = await Promise.all(
+    classes.map((cl) => loadClass(`${path}\\${cl}`)),
+  );
+
+  return data;
 };

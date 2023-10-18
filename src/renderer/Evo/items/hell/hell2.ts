@@ -15,8 +15,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
   },
-  'Megaton Blade': {
-    id: 'Megaton Blade',
+  'Megaton Blades': {
+    id: 'Megaton Blades',
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.EPIC,
     icon: 'BTNNagaWeaponUp2',

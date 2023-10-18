@@ -8,13 +8,25 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
+import { useMemo } from 'react';
 import Settings from './Settings';
 import { Character } from './Evo/Character';
 import theme from './theme';
 import { useCharacterContext } from '../context';
+import { tier4Classes } from '../constants/evo/classes';
+import { useSettingsContext } from '../settingsContext';
+import { Class } from '../main/maps/evo/load';
 
 export default function App() {
   const { allClasses, loadClasses } = useCharacterContext();
+  const { onlyT4Classes } = useSettingsContext();
+
+  const classesMenu = useMemo(() => {
+    if (!onlyT4Classes) return allClasses;
+    return allClasses.filter((character) =>
+      tier4Classes.includes(character.hero),
+    );
+  }, [allClasses, onlyT4Classes]);
 
   return (
     <Router initialEntries={['/settings']}>
@@ -32,9 +44,10 @@ export default function App() {
               position: 'relative',
             }}
           >
-            <Box sx={{ overflowY: 'auto' }}>
+            <Box>
               <Box
                 sx={{
+                  height: '50px',
                   padding: '20px',
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -46,14 +59,16 @@ export default function App() {
                   <CachedIcon />
                 </IconButton>
               </Box>
-              <MenuList>
-                {allClasses.map((el) => (
+              <MenuList
+                sx={{ overflowY: 'auto', height: 'calc(100vh - 50px)' }}
+              >
+                {classesMenu.map((character: Class) => (
                   <MenuItem
                     component={Link}
-                    to={`/character/${el.hero}`}
-                    key={el.hero.split(' ').join('_')}
+                    to={`/character/${character.hero}`}
+                    key={character.hero.split(' ').join('_')}
                   >
-                    <ListItemText>{el.hero}</ListItemText>
+                    <ListItemText>{character.hero}</ListItemText>
                   </MenuItem>
                 ))}
               </MenuList>

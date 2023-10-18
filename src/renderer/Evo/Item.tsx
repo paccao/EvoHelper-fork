@@ -26,7 +26,7 @@ export const EvoItemRenderer: FC<{ id?: string }> = ({ id }) => {
   return (
     <Tooltip
       sx={{ boxShadow: 3 }}
-      title={<ItemCard item={evoItems[id]} />}
+      title={<ItemCard id={id}  item={evoItems[id]} />}
       placement="right-start"
     >
       <Avatar variant="rounded" src={iconFromId(evoItems[id].icon)} />
