@@ -25,6 +25,7 @@ import { pieces } from './forging/pieces';
 import { angelNature } from './forging/angelNature';
 import { angelSunItems } from './forging/angelSun';
 import { mysteryItems } from './merchants/mystery';
+import { flameItems } from './forging/flame';
 
 export const evoItems = {
   ...pieces,
@@ -43,6 +44,7 @@ export const evoItems = {
   ...angelNature,
   ...angelSunItems,
   ...mysteryItems,
+  ...flameItems,
   //
   ...icyHighlandItems,
 
