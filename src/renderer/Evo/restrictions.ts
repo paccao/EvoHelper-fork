@@ -18,6 +18,7 @@ export enum EvoItemRestictions {
   HIGH_TEMPLAR = 16,
   AC_CA_FA = 17,
   TANK = 18,
+  ULTIMATE_FORGE = 19,
 }
 
 export const evoItemRestrictions = {
@@ -40,4 +41,5 @@ export const evoItemRestrictions = {
   '16': 'High Templar class only',
   '17': 'Acolyte, Caster, Fairy class only',
   '18': 'Tank classes only',
+  '19': 'Ultimate forge material',
 };

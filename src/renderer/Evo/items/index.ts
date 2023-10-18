@@ -24,6 +24,7 @@ import { banditLordItems } from './merchants/banditLord';
 import { pieces } from './forging/pieces';
 import { angelNature } from './forging/angelNature';
 import { angelSunItems } from './forging/angelSun';
+import { mysteryItems } from './merchants/mystery';
 
 export const evoItems = {
   ...pieces,
@@ -41,6 +42,7 @@ export const evoItems = {
   ...angelCloudsItems,
   ...angelNature,
   ...angelSunItems,
+  ...mysteryItems,
   //
   ...icyHighlandItems,
 
