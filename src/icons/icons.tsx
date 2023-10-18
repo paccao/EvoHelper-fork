@@ -168,6 +168,7 @@ import BTNRuneBladeFrost from './evo/BTNRuneBladeFrost.png';
 import BTNGrimSeal from './evo/BTNGrimSeal.png';
 import BTNMongooseBlade from './evo/BTNMongooseBlade.png';
 import BTNStormShield from './evo/BTNStormShield.png';
+import EmptySlotIcon from './wc3/EmptySlot.png';
 import { imp3Icons } from './imp3Icons';
 import { fragmentedSoulIcons } from './fragmentedSoul';
 import { ancientSoulIcons } from './ancientSoul';
@@ -181,6 +182,7 @@ import { angelNatureIcons } from './angelNature';
 import { angelSunIcons } from './angelSun';
 
 const icons = {
+  EmptySlotIcon,
   // wc3 icons
   BTNSteelMelee,
   BTNAlleriaFlute,

@@ -9,7 +9,7 @@ import { iconFromId } from '../../icons/icons';
 export const EvoItemRenderer: FC<{ id?: string }> = ({ id }) => {
   if (!id) {
     return (
-      <Avatar sx={{ bgcolor: grey[800] }} variant="rounded">
+      <Avatar src={iconFromId('EmptySlotIcon')} variant="rounded">
         {' '}
       </Avatar>
     );
