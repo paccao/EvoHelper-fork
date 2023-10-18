@@ -9,7 +9,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.EPIC,
     icon: 'BTNAdvancedReinforcedHides',
-    description: '',
+    description:
+      'This powerful cuirass was made to be able to withstand almost all kinds of attacks and not impede the wearer in any way. It succeeds in this aspect.',
     effects: ['150 Armor'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
@@ -19,7 +20,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.EPIC,
     icon: 'BTNNagaWeaponUp2',
-    description: '',
+    description:
+      "Outlawed throughout the entire land, anyone seen to possess these powerful assassination blades are immediately put down - and for good reason. These blades augment the assassin's skill tenfold with its extremely sharp strikes.",
     effects: [
       '+2350 Damage',
       'Passive: 60% chance to deal 3x Physical Damage.',
@@ -32,7 +34,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.EPIC,
     icon: 'BTNBookOfTheDead',
-    description: '',
+    description:
+      "This Book's secrets explain in depth the mysteries of death and the afterlife.",
     effects: ['+500 Intelligence', '+2500 Mana'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
@@ -42,7 +45,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNArcaneShield',
-    description: '',
+    description:
+      "One of the most powerful spirit shields ever made, the Angel's Sanctuary was famed for the Battle of Emridy Meadows, where it protected an Angel from Zuggtmoy's attacks.",
     effects: ['150 Armor', '+1100 Health'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
@@ -52,7 +56,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Weapon_Rifle_05',
-    description: '',
+    description:
+      'This is the weapon of the goddess Athena. Each time it fires, it quadruples the speed, rate of fire, and impact of the shots, making it an outstanding weapon for any archer.',
     effects: ['+2600 Damage'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
@@ -62,7 +67,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNShuriken3',
-    description: '',
+    description:
+      'Forged with starlight magic, the Brightstar is a very powerful weapon used by A ranked ninjas when performing dangerous assassinations.',
     effects: ['+525 Agility', '+5% Cooldown reduction'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
@@ -71,9 +77,15 @@ export const hell2Items: { [id: string]: EvoItem } = {
     id: "Dawn's Legacy",
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.LEGENDARY,
-    icon: 'BTNTimeSabres',
-    description: '',
-    effects: ['+2400 Damage', '+4400 Health'],
+    icon: 'BTNAbility_Rogue_Sprint',
+    description:
+      'The Angel Dawn crafted these boots from Angelic Moonsilver and Farcloud wings, making the wielder very swift and agile.',
+    effects: [
+      '+170 All stats',
+      '+15% Attack speed',
+      '+80 Movement speed',
+      'Active: Teleport to any Inn. Cooldown 30s.',
+    ],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
   },
@@ -82,7 +94,8 @@ export const hell2Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNBoneChimes',
-    description: '',
+    description:
+      'The artifact of the abyssal lord, Anthes. The chimes are very powerful and a symbol of pure hatred and dispersion.',
     effects: [],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
