@@ -4,12 +4,12 @@ import { EvoItem } from '../item';
 
 export const icyHighlandItems: { [id: string]: EvoItem } = {
   // Icy Highland
-  'Sharp Claw': {
-    id: 'Sharp Claw',
+  'Sharp Claws': {
+    id: 'Sharp Claws',
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.COMMON,
     icon: 'BTNClawsOfAttack',
-    description: '',
+    description: 'These sharp claws remind the user of sharp fingernails.',
     effects: ['+15 Damage'],
     source: 'Icy Highland',
   },
@@ -18,7 +18,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNHumanMissileUpOne',
-    description: '',
+    description:
+      'This musket uses black gunpowder - not a powerful choice, but certainly usable.',
     effects: ['+22 Damage'],
     source: 'Icy Highland',
   },
@@ -27,7 +28,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNPriestAdept',
-    description: '',
+    description:
+      'The crystal etched at the top of the aelderwood glows brightly, giving the user a sense of tranquility.',
     effects: ['+10 Damage', '+15 Intelligence'],
     source: 'Icy Highland',
   },
@@ -36,7 +38,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNImprovedBows',
-    description: '',
+    description:
+      'This bow is made of Elderwood - a rare material found in the Elderwood Forests; hence the name.',
     effects: ['+15 Damage', '+6 Agility'],
     source: 'Icy Highland',
   },
@@ -45,7 +48,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNMoonArmor',
-    description: '',
+    description:
+      'This armor was crafted with the sole purpose of advanced defence.',
     effects: ['+11 Armor'],
     source: 'Icy Highland',
   },
@@ -54,7 +58,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNWitchDoctorAdept',
-    description: '',
+    description:
+      'This wand has a cut above the average wands sold on the market - it is sharper and more durable.',
     effects: ['+6 Damage', '+200 Mana'],
     source: 'Icy Highland',
   },
@@ -63,7 +68,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.RARE,
     icon: 'BTNThoriumMelee',
-    description: '',
+    description:
+      'This powerful blade glows with an innate blue energy, and is cold to the touch.',
     effects: ['+40 Damage', 'Passive: Frost attack. Slows the target by 15%.'],
     source: 'Icy Highland',
   },
@@ -72,7 +78,8 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.RARE,
     icon: 'BTNThoriumArmor',
-    description: '',
+    description:
+      'This shield was rumored to have been taken by the arctic wolves of the north, and were never seen again...until now.',
     effects: ['+20 Armor'],
     source: 'Icy Highland',
   },

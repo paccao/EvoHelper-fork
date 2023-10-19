@@ -20,7 +20,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNArcaniteRanged',
-    description: '',
+    description:
+      'Forged by Doom himself, the Doombringer Champion Sword is a force to behold.',
     effects: ['+3400 Damage', '+5000 Health'],
     source: 'Tristram',
     sourceShort: 'h4',
@@ -30,7 +31,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Weapon_Bow_09',
-    description: '',
+    description:
+      'During the First Great War, the Sephax crafted this bow for their best marksman, with the intention of striking down their enemies with it. However, the bow, too fast for its own good, struck down the wielder and the Sephax themselves, wiping them out. How ironic - they created it to defeat their enemies, but got defeated instead.',
     effects: ['+4200 Damage'],
     source: 'Tristram',
     sourceShort: 'h4',
@@ -40,7 +42,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Wand_08',
-    description: '',
+    description:
+      'The magical blade of the lost battlemage Zan. After being reforged by the High Wizard Council, the blade is once again back to its purest form.',
     effects: [
       '+550 Intelligence',
       'Active: Restores 10% of Max Mana. Cooldown 15s.',
@@ -53,7 +56,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNGhoulFrenzy',
-    description: '',
+    description:
+      'The Hellmouth was forged for sinister purposes. Unfortunately, whoever forged it is probably dead, now that it is in your hands. Shame.',
     effects: ['+200 Armor', '+4400 Health'],
     source: 'Tristram',
     sourceShort: 'h4',
@@ -63,7 +67,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNAAA_PhantomDancer',
-    description: '',
+    description:
+      'Twin blades crafted using thin air, light enough to have the swiftness of the shadows.',
     effects: ['+200 Armor', '+4400 Health'],
     source: 'Tristram',
     sourceShort: 'h4',
@@ -73,7 +78,8 @@ export const hell4Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNSoulSword',
-    description: '',
+    description:
+      'The Ark Royal, named after the powerful Templar Carrier, is an energy blade. It can cut through almost anything, making it the perfect killing machine.',
     effects: ['+4000 Damage'],
     source: 'Tristram',
     sourceShort: 'h4',

@@ -1,9 +1,9 @@
-import Silver from './evo/ancientSoul/Silver.png';
-import Emerald from './evo/ancientSoul/Emerald.png';
-import Sapphire from './evo/ancientSoul/Sapphire.png';
-import Amethyst from './evo/ancientSoul/Ametyst.png';
-import Ruby from './evo/ancientSoul/Ruby.png';
-import Diamond from './evo/ancientSoul/Diamond.png';
+import Silver from './png/evo/ancientSoul/Silver.png';
+import Emerald from './png/evo/ancientSoul/Emerald.png';
+import Sapphire from './png/evo/ancientSoul/Sapphire.png';
+import Amethyst from './png/evo/ancientSoul/Ametyst.png';
+import Ruby from './png/evo/ancientSoul/Ruby.png';
+import Diamond from './png/evo/ancientSoul/Diamond.png';
 
 export const ancientSoulIcons = {
   Silver,

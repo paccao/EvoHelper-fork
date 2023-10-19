@@ -60,7 +60,7 @@ export default function App() {
                 </IconButton>
               </Box>
               <MenuList
-                sx={{ overflowY: 'auto', height: 'calc(100vh - 50px)' }}
+                sx={{ overflowY: 'auto', height: 'calc(100vh - 90px)' }}
               >
                 {classesMenu.map((character: Class) => (
                   <MenuItem

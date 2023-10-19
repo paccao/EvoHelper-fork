@@ -8,7 +8,8 @@ export const bobBuilderItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNSea_Heavy_Armor',
-    description: '',
+    description:
+      'The Lunar Cuirass, forged with sapphire to greatly protect the wielder at all cost.',
     effects: ['+50 Armor', '+1650 Health', '+1250 Mana'],
     crafting: ['Lunar Cuirass', 'Rare Armor Piece', 'Ocean Fragment'],
     source: 'Bob the Builder',
@@ -18,7 +19,8 @@ export const bobBuilderItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNArcaniteArmor',
-    description: '',
+    description:
+      'This artifact was forged by Hades himself to aid him against fighting Zeus in the Age of Mythology. However, to make sure that the artifact would live on even if he was defeated, he made it as light as a feather, so anyone could use it.',
     effects: ['+280 All stats'],
     crafting: [
       'Ultra Armor Piece',
@@ -34,7 +36,8 @@ export const bobBuilderItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INQUISITOR,
     rarity: EvoRarity.FORGED,
     icon: 'BTNStoneShield',
-    description: '',
+    description:
+      'Result of the fusion reaction of eternal fire and earthstone essence, this shield is crafted to protect the world from harm.',
     effects: [
       '+150 Armor',
       '+3300 Mana',

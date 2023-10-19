@@ -8,7 +8,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.FORGED,
     icon: 'BTNInjusticeRing',
-    description: '',
+    description:
+      'The powerful ring resulted in merging four gemstones into one. Aside from its shimmering glow, the ring has imbued power within it and is capable on enhancing the wielder in every aspect.',
     effects: [
       '+675 Intelligence',
       '+5% Cooldown reduction',
@@ -22,7 +23,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNBlood_Stone',
-    description: '',
+    description:
+      'A blood diamond in its purest form. With the powers of the ruby infused in it, it is capable of granting inner vitality and power to its wielder.',
     effects: ['+250 All stats', '+5% Cooldown reduction'],
     crafting: [
       'Blood Diamond',
@@ -39,7 +41,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.DRUID,
     rarity: EvoRarity.FORGED,
     icon: 'BTNBookOfAncientKnowledge',
-    description: '',
+    description:
+      'The book of the forbidden idol, Song. It contains sacred texts and mysterious pages which have codes written on summoning mystical creatures.',
     effects: [
       '+425 All stats',
       '+5% Cooldown reduction',
@@ -59,7 +62,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.CHUNIN,
     rarity: EvoRarity.FORGED,
     icon: 'BTNWindGlove',
-    description: '',
+    description:
+      'The glove of elite ninjas, enhancing grip and makes wielding kunais easier.',
     effects: [
       '+800 Agility',
       '+8% Cooldown reduction',
@@ -80,7 +84,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNMagicMirror',
-    description: '',
+    description:
+      'The magical tool used by heroes to exit the dark reflection of the present time.',
     effects: [
       '+400 All stats',
       '+50 Armor',
@@ -102,7 +107,8 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNEyeOfDalaran',
-    description: '',
+    description:
+      "Forged with the Harbinger's Essence, the Eye of Neptune's full power is unlocked.",
     effects: [
       '+15 000 Health',
       '+11 500 Mana',

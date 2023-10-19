@@ -9,7 +9,7 @@ export const goldmineItems: { [id: string]: EvoItem } = {
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNBelt',
     description: '',
-    effects: ['+20 String'],
+    effects: ['+20 Strength'],
     source: 'Gold Mine',
   },
   'Boots of the Eagle': {
@@ -21,8 +21,8 @@ export const goldmineItems: { [id: string]: EvoItem } = {
     effects: ['+54 Agility'],
     source: 'Gold Mine',
   },
-  'Bracer of the Bear': {
-    id: 'Bracer of the Bear',
+  'Bracers of the Bear': {
+    id: 'Bracers of the Bear',
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNRunedBracers',

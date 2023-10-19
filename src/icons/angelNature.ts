@@ -1,14 +1,14 @@
-import Deathgazer from './evo/angelNature/Deathgazer.png';
-import AnciendDragonBook from './evo/angelNature/AncientDragonBook.png';
-import FinalEmeraldBlade from './evo/angelNature/FinalEmeraldBlade.png';
-import EclairLaDemes from './evo/angelNature/EclairLaDemes.png';
-import DragonTotem from './evo/angelNature/DragonTotem.png';
-import WintersSoul from './evo/angelNature/WintersSoul.png';
-import DragonBow from './evo/angelNature/DragonBow.png';
-import ClawOfMidnight from './evo/angelNature/ClawOfMidninght.png';
-import Nightshadow from './evo/angelNature/Nightshadow.png';
-import BlastingRod from './evo/angelNature/BlastingRod.png';
-import Windspeaker from './evo/angelNature/Windspeaker.png';
+import Deathgazer from './png/evo/angelNature/Deathgazer.png';
+import AnciendDragonBook from './png/evo/angelNature/AncientDragonBook.png';
+import FinalEmeraldBlade from './png/evo/angelNature/FinalEmeraldBlade.png';
+import EclairLaDemes from './png/evo/angelNature/EclairLaDemes.png';
+import DragonTotem from './png/evo/angelNature/DragonTotem.png';
+import WintersSoul from './png/evo/angelNature/WintersSoul.png';
+import DragonBow from './png/evo/angelNature/DragonBow.png';
+import ClawOfMidnight from './png/evo/angelNature/ClawOfMidninght.png';
+import Nightshadow from './png/evo/angelNature/Nightshadow.png';
+import BlastingRod from './png/evo/angelNature/BlastingRod.png';
+import Windspeaker from './png/evo/angelNature/Windspeaker.png';
 
 export const angelNatureIcons = {
   Deathgazer,

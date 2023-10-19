@@ -9,7 +9,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNTheBlackArrow',
-    description: '',
+    description:
+      'The legendary tainted dark bow, used for punishing ruthless criminals.',
     effects: ['+500 Agility', '+15% Attack speed'],
     source: "Death's Realm",
     sourceShort: 'h3',
@@ -19,7 +20,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNMetalEnergy',
-    description: '',
+    description:
+      'The pure tainted orb rumored to give the wielder tremendous evil powers.',
     effects: ['+8800 Health', '+6600 Mana'],
     source: "Death's Realm",
     sourceShort: 'h3',
@@ -29,7 +31,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Wand_05',
-    description: '',
+    description:
+      'Legend has it that it was forged from the azure tears of Winter herself when she sacrificed herself to defeat the Lord of the Undying Sun and bring balance back to the world of Silvasia.',
     effects: ['+550 Intelligence', '+40 Mana Regen', '+5% Cooldown reduction'],
     source: "Death's Realm",
     sourceShort: 'h3',
@@ -39,7 +42,7 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Sword_09',
-    description: '',
+    description: 'A very powerful weapon furnished by dark powers.',
     effects: [
       '+600 Intelligence',
       '+30 Mana Regen',
@@ -53,7 +56,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNDryadDispelMagic',
-    description: '',
+    description:
+      'A blade that is so sharp that it cuts through the soul of its prey.',
     effects: ['+2300 Damage', '+15% Attack speed'],
     source: "Death's Realm",
     sourceShort: 'h3',
@@ -63,7 +67,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNEnchantedGemstone',
-    description: '',
+    description:
+      "A very powerful crystal with a soul stored inside it. It is said to glow very bright on the brink of the owner's death, protecting the wielder.",
     effects: ['+7150 Health', '+25% Spell resist'],
     source: "Death's Realm",
     sourceShort: 'h3',
@@ -73,7 +78,8 @@ export const hell3Items: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNTimeSabres',
-    description: '',
+    description:
+      'Crafted beyond human time, the Time Sabres has proven to be one of the most powerful weapons used in ancient history.',
     effects: ['+2400 Damage', '+4400 Health'],
     source: "Death's Realm",
     sourceShort: 'h3',

@@ -28,8 +28,11 @@ import { mysteryItems } from './merchants/mystery';
 import { godlyItems } from './forging/godly';
 import { fireItems } from './forging/fire';
 import { flameItems } from './forging/flame';
+import { forgottenCryptItems } from './easy/forgottenCrypt';
+import { fishingItems } from './fishing';
 
 export const evoItems = {
+  ...fishingItems,
   ...pieces,
   // vendors
   ...weaponsDealerItems,
@@ -51,6 +54,7 @@ export const evoItems = {
   ...godlyItems,
   //
   ...icyHighlandItems,
+  ...forgottenCryptItems,
 
   ...goldmineItems,
   ...centaurItems,
