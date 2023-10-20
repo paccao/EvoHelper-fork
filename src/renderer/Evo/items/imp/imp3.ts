@@ -29,6 +29,17 @@ export const imp3Items: { [id: string]: EvoItem } = {
     source: 'Punishment Chamber',
     sourceShort: 'Imp 3',
   },
+  'Reaper Armor': {
+    id: 'Reaper Armor',
+    restriction: EvoItemRestictions.MELEE,
+    rarity: EvoRarity.LEGENDARY,
+    icon: 'ReaperArmorIcon',
+    description:
+      'The skin of the reaper, granting unholy protection.',
+    effects: ['+325 Armor', '+75 HP regen'],
+    source: 'Punishment Chamber',
+    sourceShort: 'Imp 3',
+  },
   Smite: {
     id: 'Smite',
     restriction: EvoItemRestictions.MELEE,
@@ -51,6 +62,17 @@ export const imp3Items: { [id: string]: EvoItem } = {
     description:
       'The orb which retains the power of the sun to grant the vitality for the wielder.',
     effects: ['+18 500 Health', '+9 250 Mana'],
+    source: 'Punishment Chamber',
+    sourceShort: 'Imp 3',
+  },
+  'Moon Orb': {
+    id: 'Moon Orb',
+    restriction: EvoItemRestictions.ALL_CLASSES,
+    rarity: EvoRarity.LEGENDARY,
+    icon: 'MoonOrbIcon',
+    description:
+      'The orb which retains the power of the moon to grant the magic for the wielder.',
+    effects: ['+12 500', '+14 000 Mana'],
     source: 'Punishment Chamber',
     sourceShort: 'Imp 3',
   },
