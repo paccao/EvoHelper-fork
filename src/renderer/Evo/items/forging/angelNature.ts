@@ -149,7 +149,7 @@ export const angelNature: { [id: string]: EvoItem } = {
     id: 'Claw of Midnight',
     restriction: EvoItemRestictions.SHAPESHIFTER,
     rarity: EvoRarity.FORGED,
-    icon: 'DragonBow',
+    icon: 'ClawOfMidnight',
     description:
       'The claw of the Dragon of Pure Darkness. It is so tainted and deadly that being scratched by it means sure death.',
     effects: [

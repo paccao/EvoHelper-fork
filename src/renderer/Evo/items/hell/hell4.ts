@@ -69,7 +69,7 @@ export const hell4Items: { [id: string]: EvoItem } = {
     icon: 'BTNAAA_PhantomDancer',
     description:
       'Twin blades crafted using thin air, light enough to have the swiftness of the shadows.',
-    effects: ['+200 Armor', '+4400 Health'],
+    effects: ['+500 Agility', '+25% Attack Speed'],
     source: 'Tristram',
     sourceShort: 'h4',
   },

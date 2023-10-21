@@ -3,8 +3,8 @@ import { EvoRarity } from '../../rarity';
 import { EvoItem } from '../item';
 
 export const angelSunItems: { [id: string]: EvoItem } = {
-  'Legend Of Freya': {
-    id: 'Legend Of Freya',
+  'Legend of Freya': {
+    id: 'Legend of Freya',
     restriction: EvoItemRestictions.HIGH_TEMPLAR,
     rarity: EvoRarity.FORGED,
     icon: 'LegendOfFreya',

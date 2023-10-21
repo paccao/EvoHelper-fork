@@ -8,7 +8,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.RARE,
     icon: 'BTNAbility_Hunter_AimedShot',
-    description: '',
+    description:
+      'Forged by the Archers of Frostfire, it was intended for only 2 purposes: quick drawing and maximum damage output at the same time. The result was this.',
     effects: ['+1400 Damage'],
     source: 'Forgotten Sewers',
   },
@@ -17,7 +18,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.RARE,
     icon: 'BTNNecklace',
-    description: '',
+    description:
+      'This necklace bears the signature of the seven souls, a sign of true power.',
     effects: ['+275 Intelligence', '+20 Mana regen'],
     source: 'Forgotten Sewers',
   },
@@ -26,7 +28,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.EPIC,
     icon: 'BTNAbility_BackStab',
-    description: '',
+    description:
+      'Used by Hexfire, one of the most notorious assassins in the history of Silvasia, this dagger is his final legacy before his untimely demise in the gorges of Bragar Gor.',
     effects: [
       '+1400 Damage',
       'Passive: 40% chance to deal 3x Physical Damage.',
@@ -38,7 +41,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNRevenant',
-    description: '',
+    description:
+      "Icecrown's Visage reveals the true nature of its wearer - in the most cruelest of ways to the wearer's enemies. Along with fear, this helmet adds on powerful defense in case fear is not enough to save the wearer in battle.",
     effects: ['+75 Armor', '+1100 Health'],
     source: 'Forgotten Sewers',
   },
@@ -47,7 +51,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.EPIC,
     icon: 'BTNGMExchange',
-    description: '',
+    description:
+      'This stone was once known for its supreme control over the All-Fire. However, after a century, its power has weakened, but still retains its fiery touch.',
     effects: ['+140 All stats'],
     source: 'Forgotten Sewers',
   },
@@ -56,8 +61,9 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.SW_THIEF_WH,
     rarity: EvoRarity.EPIC,
     icon: 'BTNSpell_Holy_BlessingOfProtection',
-    description: '',
-    effects: ['+140 All stats'],
+    description:
+      'This Shield was forged to defend against even the most powerful of fires, however it turned out it worked equally as well with other sources of magic.',
+    effects: ['+90 Armor'],
     source: 'Forgotten Sewers',
   },
   'Staff of the Ages': {
@@ -65,7 +71,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.INT,
     rarity: EvoRarity.EPIC,
     icon: 'BTNWandOfManaSteal',
-    description: '',
+    description:
+      "Only those who are worthy ever understand its true purpose. For those who can't however, still become powerful mages due to its powerful innate energies.",
     effects: ['+350 Intelligence'],
     source: 'Forgotten Sewers',
   },
@@ -74,7 +81,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.EPIC,
     icon: 'BTNPeriapt',
-    description: '',
+    description:
+      'The curious stone of Vsmir is said to hold extraordinary powers for the strong-minded - a true gem.',
     effects: ['+1000 Damage', '+100 Agility'],
     source: 'Forgotten Sewers',
   },
@@ -83,7 +91,8 @@ export const sewersItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNOrbOfDarkness',
-    description: '',
+    description:
+      'An orb coated with the soul of the filthy being, The One. Used in crafting powerful equipments with its tained powers.',
     effects: [],
     source: 'Forgotten Sewers',
   },

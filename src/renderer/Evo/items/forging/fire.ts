@@ -67,7 +67,7 @@ export const fireItems: { [id: string]: EvoItem } = {
     id: 'Tiger Claw',
     restriction: EvoItemRestictions.SHAPESHIFTER,
     rarity: EvoRarity.FORGED,
-    icon: 'Hatred',
+    icon: 'TigerClaw',
     description:
       'Cut from the hand of the behemoth, it resembles the claw of a deadly tiger of hell.',
     effects: [
@@ -140,8 +140,8 @@ export const fireItems: { [id: string]: EvoItem } = {
     crafting: ['Demon Chanter', 'Fire Stone'],
     source: 'Fire merchant',
   },
-  'Heart of the Behemoth': {
-    id: 'Heart of the Behemoth',
+  'Heart of Behemoth': {
+    id: 'Heart of Behemoth',
     restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'HeartOfTheBehemoth',
