@@ -1,7 +1,7 @@
 import Angelslayer from './png/evo/m1/BTNDragon_Fang_Blade_Sword_Dagger.png';
 import BookOfMudora from './png/evo/m1/BTNAncientBook.png';
 import CaneOfSomaria from './png/evo/m1/BTNSomaria.png';
-import GodlenSun from './png/evo/m1/BTNSunRay.png';
+import GoldenSun from './png/evo/m1/BTNSunRay.png';
 import Inspirit from './png/evo/m1/BTN_Inspirit.png';
 import MasterSword from './png/evo/m1/BTNArcaneSword.png';
 import MirrorShield from './png/evo/m1/BTN_MirrorShield.png';
@@ -13,7 +13,7 @@ export const m1Icons = {
   Angelslayer,
   BookOfMudora,
   CaneOfSomaria,
-  GodlenSun,
+  GoldenSun,
   Inspirit,
   MasterSword,
   MirrorShield,

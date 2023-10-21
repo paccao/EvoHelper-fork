@@ -94,7 +94,7 @@ export default function App() {
               flexGrow: 1,
               height: '100vh',
               overflow: 'auto',
-              paddingLeft: '20px',
+              padding: '20px',
               background: theme.palette.grey[900],
             }}
           >

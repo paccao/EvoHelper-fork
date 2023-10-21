@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Grid from '@mui/material/Grid';
 import { useParams } from 'react-router-dom';
 import { Button } from '@mui/material';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { useCharacterContext } from '../../context';
@@ -18,18 +19,16 @@ export const Character: FC = () => {
 
   return (
     <div>
-      <h3>
+      <Typography variant="h6">
         {character.hero} {character.level && ` - ${character.level} level`}
-      </h3>
-      <h5>Gold: {character.gold}</h5>
-      <h5>PowerShards: {character.powerShards}</h5>
+      </Typography>
+      <Typography variant="caption">Gold: {character.gold}</Typography>
+      <br />
+      <Typography variant="caption">
+        PowerShards: {character.powerShards}
+      </Typography>
       <Grid container>
-        <Grid
-          item
-          sx={{
-            marginRight: '20px',
-          }}
-        >
+        <Grid item sx={{ marginRight: '20px' }}>
           <EvoStash itemIds={character.inventory} />
         </Grid>
         <Grid item>
@@ -56,9 +55,23 @@ export const Character: FC = () => {
       <Typography>Press Load - it will set hotkey for A button.</Typography>
       <Typography>Head to wc3 and press A.</Typography>
       <Typography>Let it do its thing.</Typography>
-      <Button variant="outlined" onClick={() => onLoadClick(character)}>
-        Load
-      </Button>
+      <Typography>
+        Tip: remember to turn off caps lock and switch to English
+      </Typography>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Button variant="contained" onClick={() => onLoadClick(character)}>
+          Load
+        </Button>
+        <Button onClick={() => onLoadClick(character, true)}>
+          Load (legacy)
+        </Button>
+      </Box>
     </div>
   );
 };

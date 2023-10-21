@@ -30,6 +30,7 @@ import { fireItems } from './forging/fire';
 import { flameItems } from './forging/flame';
 import { forgottenCryptItems } from './easy/forgottenCrypt';
 import { fishingItems } from './fishing';
+import { cursedHeavenItems } from './mythic/cursedHeavenItems';
 
 export const evoItems = {
   ...fishingItems,
@@ -69,4 +70,5 @@ export const evoItems = {
   ...imp1Items,
   ...imp2Items,
   ...imp3Items,
+  ...cursedHeavenItems,
 };

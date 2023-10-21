@@ -14,7 +14,7 @@ import fs from 'fs/promises';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 import { loadTevefData } from './maps/evo/load';
-import { executeCommand } from './dirt/keyboard';
+import { executeCommand, executeCommandLegacy } from './dirt/keyboard';
 
 let mainWindow: BrowserWindow | null = null;
 
@@ -23,11 +23,20 @@ ipcMain.on('ipc', async (event, arg) => {
   event.reply('ipc', data);
 });
 
-ipcMain.on('load', async (event, arg) => {
+ipcMain.on('load', async (event, arg, legacy) => {
+  // clear previous hotkey forcefully
+  globalShortcut.unregister('A');
   globalShortcut.register('A', async () => {
     globalShortcut.unregister('A');
+    // eslint-disable-next-line no-restricted-syntax
     for (const command of arg) {
-      await executeCommand(command);
+      if (legacy) {
+        // eslint-disable-next-line no-await-in-loop
+        await executeCommandLegacy(command);
+      } else {
+        // eslint-disable-next-line no-await-in-loop
+        await executeCommand(command);
+      }
     }
   });
 });

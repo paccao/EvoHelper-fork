@@ -11,9 +11,8 @@ import { Class } from './main/maps/evo/load';
 
 interface CharacterContext {
   allClasses: Class[];
-
   setAllClasses: (classes: Class[]) => void;
-  onLoadClick: (character: Class) => void;
+  onLoadClick: (character: Class, legacy?: boolean) => void;
   loadClasses: () => void;
   getCharacterById: (id?: string) => Class | undefined;
 }
@@ -33,16 +32,23 @@ export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
     }
     return allClasses.find((character) => character.hero === id);
   };
-  const onLoadClick = (character: Class) => {
+  const onLoadClick = (character: Class, legacy?: boolean) => {
     if (character && character.code) {
-      window.electron.ipcRenderer.sendMessage('load', [
-        '-rp',
-        '-lc',
-        character.code.slice(0, character.code.length / 2),
-        character.code.slice(character.code.length / 2, character.code.length),
-        '-le',
-        ...extraLines.split('\n'),
-      ]);
+      window.electron.ipcRenderer.sendMessage(
+        'load',
+        [
+          '-rp',
+          '-lc',
+          character.code.slice(0, character.code.length / 2),
+          character.code.slice(
+            character.code.length / 2,
+            character.code.length,
+          ),
+          '-le',
+          ...extraLines.split('\n'),
+        ],
+        legacy,
+      );
     }
   };
   const value = {
