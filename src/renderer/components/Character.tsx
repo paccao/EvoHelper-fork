@@ -71,9 +71,6 @@ export const Character: FC = () => {
         >
           Load
         </Button>
-        <Button onClick={() => onLoadClick(character, true)}>
-          Load (legacy)
-        </Button>
       </Box>
     </div>
   );

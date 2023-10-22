@@ -32,6 +32,8 @@ import { forgottenCryptItems } from './easy/forgottenCrypt';
 import { fishingItems } from './fishing';
 import { cursedHeavenItems } from './mythic/cursedHeavenItems';
 import { imp3matsItems } from './merchants/imp3mats';
+import { headItems } from './merchants/heads';
+import { agonyItems } from './merchants/agony';
 
 export const evoItems = {
   ...fishingItems,
@@ -73,4 +75,6 @@ export const evoItems = {
   ...imp3Items,
   ...cursedHeavenItems,
   ...imp3matsItems,
+  ...headItems,
+  ...agonyItems,
 };

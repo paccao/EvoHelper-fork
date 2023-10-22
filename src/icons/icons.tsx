@@ -21,6 +21,12 @@ import BTNImprovedBows from './png/wc3/BTNImprovedBows.png';
 import BTNWitchDoctorAdept from './png/wc3/BTNWitchDoctorAdept.png';
 import BTNThoriumMelee from './png/wc3/BTNThoriumMelee.png';
 import BTNThoriumArmor from './png/wc3/BTNThoriumArmor.png';
+import BTNEredarWarlockPurple from './png/wc3/BTNEredarWarlockPurple.png';
+import BTNHeroDeathKnight from './png/wc3/BTNHeroDeathKnight.png';
+import BTNGreenHydra from './png/wc3/BTNGreenHydra.png';
+import BTNOrbOfFire from './png/wc3/BTNOrbOfFire.png';
+import TheOnesHead from './png/wc3/TheOnesHead.png';
+import BTNMetamorphosis from './png/wc3/BTNMetamorphosis.png';
 
 // Hard 1 (Evo)
 import BTNBelt from './png/wc3/BTNBelt.png';
@@ -184,6 +190,7 @@ import { godlyIcons } from './godlyIcons';
 import { fishingIcon } from './fishing';
 import { forgottenCryptIcons } from './forgottenCrypt';
 import { imp3matsIcons } from './imp3mats';
+import { agonyIcons } from './agony';
 
 const icons = {
   EmptySlotIcon,
@@ -348,7 +355,14 @@ const icons = {
   BTNRuneBladeFrost,
   BTNGrimSeal,
   BTNMongooseBlade,
+  BTNEredarWarlockPurple,
   BTNStormShield,
+  BTNHeroDeathKnight,
+  BTNGreenHydra,
+  BTNOrbOfFire,
+  TheOnesHead,
+  BTNMetamorphosis,
+
   ...forgottenCryptIcons,
   ...fishingIcon,
   ...piecesIcons,
@@ -365,6 +379,7 @@ const icons = {
   ...angelFireIcons,
   ...flameIcons,
   ...imp3matsIcons,
+  ...agonyIcons,
 };
 
 export const iconFromId = (id: keyof typeof icons): string => {

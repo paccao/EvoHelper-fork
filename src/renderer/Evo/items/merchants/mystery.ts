@@ -56,7 +56,8 @@ export const mysteryItems: { [id: string]: EvoItem } = {
     rarity: EvoRarity.GODLY,
     icon: 'Twilight',
     description: 'The beginning.',
-    effects: [
+    effects: [],
+    crafting: [
       'Mystery',
       'Draconic Trinity',
       'Hellish Behemoth',

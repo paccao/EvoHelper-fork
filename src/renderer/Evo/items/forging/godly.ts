@@ -221,18 +221,58 @@ const godlyItemsNew: { [id: string]: EvoItem } = {
 };
 
 const blessedGodly = {
-  'Blessed Aerielis': godlyItemsNew.Aerielis,
-  'Blessed Blade of Awe': godlyItemsNew['Blade of Awe'],
-  'Blessed Cosmos': godlyItemsNew.Cosmos,
-  'Blessed Ender': godlyItemsNew.Ender,
-  'Blessed Fate': godlyItemsNew.Fate,
-  'Blessed Guardian Force': godlyItemsNew['Guardian Force'],
-  'Blessed Hope': godlyItemsNew.Hope,
-  "Blessed Kiea's Tale": godlyItemsNew["Kiea's Tale"],
-  'Blessed Raising Heart': godlyItemsNew['Raising Heart'],
-  'Blessed Rune Sihill': godlyItemsNew['Rune Sihill'],
-  'Blessed Tooth of Belial': godlyItemsNew['Tooth of Belial'],
-  'Blessed Virtue': godlyItemsNew.Virtue,
+  'Blessed Aerielis': {
+      ...godlyItemsNew.Aerielis,
+      id: 'Blessed Aerielis'
+  },
+  'Blessed Blade of Awe': {
+    ...godlyItemsNew['Blade of Awe'],
+    id: 'Blessed Blade of Awe'
+  },
+  'Blessed Cosmos': {
+    ...godlyItemsNew.Cosmos,
+    id: 'Blessed Cosmos'
+  },
+  'Blessed Ender': {
+    ...godlyItemsNew.Ender,
+    id: 'Blessed Ender'
+  },
+  'Blessed Fate': {
+    ...godlyItemsNew.Fate,
+    id: 'Blessed Fate'
+  },
+  'Blessed Guardian Force': {
+    ...godlyItemsNew['Guardian Force'],
+    id: 'Blessed Guardian Force'
+  },
+  'Blessed Hope': {
+    ...godlyItemsNew.Hope,
+    id: 'Blessed Hope'
+  },
+  "Blessed Kiea's Tale": {
+    ...godlyItemsNew["Kiea's Tale"],
+    id: "Blessed Kiea's Tale"
+  },
+  'Blessed Raising Heart': {
+    ...godlyItemsNew['Raising Heart'],
+    id: 'Blessed Raising Heart'
+  },
+  'Blessed Reinforce': {
+    ...godlyItemsNew.Reinforce,
+    id: 'Blessed Reinforce'
+  },
+  'Blessed Rune Sihill': {
+    ...godlyItemsNew['Rune Sihill'],
+    id: 'Blessed Rune Sihill',
+  },
+  'Blessed Tooth of Belial': {
+    ...godlyItemsNew['Tooth of Belial'],
+    id: 'Blessed Tooth of Belial',
+  },
+  'Blessed Virtue': {
+    ...godlyItemsNew.Virtue,
+    id: 'Blessed Virtue',
+  },
 };
 
 export const godlyItems = {

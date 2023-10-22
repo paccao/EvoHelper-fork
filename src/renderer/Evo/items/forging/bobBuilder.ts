@@ -14,8 +14,8 @@ export const bobBuilderItems: { [id: string]: EvoItem } = {
     crafting: ['Lunar Cuirass', 'Rare Armor Piece', 'Ocean Fragment'],
     source: 'Bob the Builder',
   },
-  "Hades's Artifact": {
-    id: "Hades's Artifact",
+  "Hades' Artifact": {
+    id: "Hades' Artifact",
     restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNArcaniteArmor',
