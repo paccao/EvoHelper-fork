@@ -18,6 +18,8 @@ const extractItem = (str: string, key: string, end = '" )'): string => {
   }
   const item = str
     .slice(
+      // 10 is a 'magic' number to cut color code before name
+      // |cff8B4513Scepter of Mastery    <--- example of the name
       str.indexOf(key) + key.length + 10,
       str.indexOf(end, str.indexOf(key) + 1),
     )

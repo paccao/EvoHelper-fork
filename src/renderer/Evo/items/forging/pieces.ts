@@ -14,7 +14,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mega Weapon Piece': {
-    id: 'Rare Weapon Piece',
+    id: 'Mega Weapon Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.EPIC,
     icon: 'WeaponPiece',
@@ -24,7 +24,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Ultra Weapon Piece': {
-    id: 'Rare Weapon Piece',
+    id: 'Ultra Weapon Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'WeaponPiece',
@@ -34,7 +34,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mythical Weapon Piece': {
-    id: 'Rare Weapon Piece',
+    id: 'Mythical Weapon Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.GODLY,
     icon: 'WeaponPiece',
@@ -54,7 +54,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mega Armor Piece': {
-    id: 'Rare Armor Piece',
+    id: 'Mega Armor Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.EPIC,
     icon: 'ArmorPiece',
@@ -64,7 +64,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Ultra Armor Piece': {
-    id: 'Rare Armor Piece',
+    id: 'Ultra Armor Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'ArmorPiece',
@@ -74,7 +74,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mythical Armor Piece': {
-    id: 'Rare Armor Piece',
+    id: 'Mythical Armor Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.GODLY,
     icon: 'ArmorPiece',
@@ -94,7 +94,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mega Handle Piece': {
-    id: 'Rare Handle Piece',
+    id: 'Mega Handle Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.EPIC,
     icon: 'HandlePiece',
@@ -104,7 +104,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Ultra Handle Piece': {
-    id: 'Rare Handle Piece',
+    id: 'Ultra Handle Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'HandlePiece',
@@ -114,7 +114,7 @@ export const pieces: { [id: string]: EvoItem } = {
     source: 'Blacksmith',
   },
   'Mythical Handle Piece': {
-    id: 'Rare Handle Piece',
+    id: 'Mythical Handle Piece',
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.GODLY,
     icon: 'HandlePiece',

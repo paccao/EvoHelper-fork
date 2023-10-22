@@ -29,9 +29,9 @@ export const mysteryItems: { [id: string]: EvoItem } = {
     icon: 'Mystical',
     description: 'An unknown force.',
     effects: [
-      'Dragon Tooth',
-      'Dragon Egg',
-      'Blessing of Dragon',
+      'Mythical Weapon Piece',
+      'Mythical Armor Piece',
+      'Mythical Handle Piece',
       'Nether Reactor',
     ],
     source: 'Mystery forging items',
@@ -43,6 +43,11 @@ export const mysteryItems: { [id: string]: EvoItem } = {
     icon: 'DraconicTrinity',
     description: 'The beacon of all elements.',
     effects: [],
+    crafting: [
+      'Dragon Tooth',
+      'Dragon Egg',
+      'Blessing of Dragon',
+    ],
     source: 'Mystery forging items',
   },
   Twilight: {

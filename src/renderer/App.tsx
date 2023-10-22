@@ -4,29 +4,19 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import CachedIcon from '@mui/icons-material/Cached';
-import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import { useMemo } from 'react';
-import Settings from './Settings';
-import { Character } from './Evo/Character';
+import Settings from './components/pages/Settings';
+import { Character } from './components/Character';
 import theme from './theme';
 import { useCharacterContext } from '../context';
-import { tier4Classes } from '../constants/evo/classes';
-import { useSettingsContext } from '../settingsContext';
-import { Class } from '../main/maps/evo/load';
+import { ItemsPage } from './components/pages/ItemsPage';
+import { LoaderPage } from './components/pages/LoaderPage';
+import { ItemPage } from './components/pages/ItemPage';
 
 export default function App() {
-  const { allClasses, loadClasses } = useCharacterContext();
-  const { onlyT4Classes } = useSettingsContext();
-
-  const classesMenu = useMemo(() => {
-    if (!onlyT4Classes) return allClasses;
-    return allClasses.filter((character) =>
-      tier4Classes.includes(character.hero),
-    );
-  }, [allClasses, onlyT4Classes]);
+  const { loadClasses } = useCharacterContext();
 
   return (
     <Router initialEntries={['/settings']}>
@@ -39,7 +29,7 @@ export default function App() {
               justifyContent: 'space-between',
               flexDirection: 'column',
               display: 'flex',
-              width: 220,
+              minWidth: '220px',
               height: '100vh',
               position: 'relative',
             }}
@@ -54,34 +44,21 @@ export default function App() {
                   alignItems: 'center',
                 }}
               >
-                <Typography>EvoLoader alpha</Typography>
+                <Typography>Evo helper (alpha)</Typography>
                 <IconButton onClick={loadClasses}>
                   <CachedIcon />
                 </IconButton>
               </Box>
-              <MenuList
-                sx={{ overflowY: 'auto', height: 'calc(100vh - 90px)' }}
-              >
-                {classesMenu.map((character: Class) => (
-                  <MenuItem
-                    component={Link}
-                    to={`/character/${character.hero}`}
-                    key={character.hero.split(' ').join('_')}
-                  >
-                    <ListItemText>{character.hero}</ListItemText>
-                  </MenuItem>
-                ))}
+              <MenuList>
+                <MenuItem component={Link} to="/characters">
+                  Loader
+                </MenuItem>
+                <MenuItem component={Link} to="/items">
+                  Items
+                </MenuItem>
               </MenuList>
             </Box>
-            <Box
-              sx={{
-                width: '100%',
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                backgroundColor: '#121212',
-              }}
-            >
+            <Box sx={{ width: '100%', backgroundColor: '#121212' }}>
               <Divider />
               <MenuItem component={Link} to="/settings">
                 Settings
@@ -98,10 +75,15 @@ export default function App() {
               background: theme.palette.grey[900],
             }}
           >
+            <Box sx={{ maxWidth: '105ch' }}>
             <Routes>
+              <Route path="/items" element={<ItemsPage/>}/>
+              <Route path="/item/:id" element={<ItemPage/>}/>
+              <Route path="/characters" element={<LoaderPage />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/character/:id" element={<Character />} />
             </Routes>
+            </Box>
           </Box>
         </Box>
       </ThemeProvider>

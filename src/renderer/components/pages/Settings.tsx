@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
-import { useSettingsContext } from '../settingsContext';
+import { useSettingsContext } from '../../../settingsContext';
 
 export default function Settings() {
   const {
@@ -38,7 +38,7 @@ export default function Settings() {
         value={wc3path}
         onChange={(e) => setWc3path(e.target.value)}
         id="path"
-        label="Warcraft path"
+        label="Warcraft documents path"
         variant="standard"
       />
       <TextField

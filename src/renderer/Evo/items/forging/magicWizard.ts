@@ -36,7 +36,7 @@ export const magicWizardItems: { [id: string]: EvoItem } = {
     crafting: [
       'Ultra Weapon Piece',
       'Mega Handle Piece',
-      'Nature Fragement',
+      'Nature Fragment',
       'Emerald',
     ],
     source: 'Magic Wizard',

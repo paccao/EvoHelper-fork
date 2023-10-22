@@ -183,6 +183,7 @@ import { angelSunIcons } from './angelSun';
 import { godlyIcons } from './godlyIcons';
 import { fishingIcon } from './fishing';
 import { forgottenCryptIcons } from './forgottenCrypt';
+import { imp3matsIcons } from './imp3mats';
 
 const icons = {
   EmptySlotIcon,
@@ -363,6 +364,7 @@ const icons = {
   ...angelSunIcons,
   ...angelFireIcons,
   ...flameIcons,
+  ...imp3matsIcons,
 };
 
 export const iconFromId = (id: keyof typeof icons): string => {

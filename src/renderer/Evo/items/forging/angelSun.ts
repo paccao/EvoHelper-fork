@@ -92,7 +92,7 @@ export const angelSunItems: { [id: string]: EvoItem } = {
       'Revered as the blade of the tyrant, wielding it grants insurmountable power.',
     effects: ['+5200 Damage', 'Passive: 75% chance to deal 3x Physical Damage'],
     crafting: [
-      'The Patriach',
+      'The Patriarch',
       'Lavender Fragment',
       'Amethyst',
       'Mythical Weapon Piece',

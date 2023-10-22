@@ -23,7 +23,10 @@ export const SettingsProvider: FC<PropsWithChildren> = ({ children }) => {
   const [wc3path, setWc3path] = useState<string>('');
   const [battleTag, setBattleTag] = useState<string>('');
   const [extraLines, setExtra] = useState<string>(
-    '-woff\n-c\nhttps://github.com/ArgentumHeart/WC3RPGLoader\nv0.2.0_alpha\nPlease report bugs on github.',
+    '-woff\n' +
+    '-c\n' +
+    'https://github.com/ArgentumHeart/EvoHelper\n' +
+    'v0.3.0',
   );
   const [onlyT4Classes, setOnlyT4Classes] = useState<boolean>(false);
 
@@ -52,6 +55,7 @@ export const SettingsProvider: FC<PropsWithChildren> = ({ children }) => {
 
   useEffect(() => {
     window.electron.ipcRenderer.on('settings_read', (arg: any) => {
+      console.log(arg);
       if (arg) {
         arg.hasOwnProperty('wc3path') && setWc3path(arg.wc3path);
         arg.hasOwnProperty('battleTag') && setBattleTag(arg.battleTag);

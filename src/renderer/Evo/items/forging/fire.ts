@@ -43,9 +43,9 @@ export const fireItems: { [id: string]: EvoItem } = {
     effects: [
       '+6400 Damage',
       'Active: Next 3 basic attacks will deal [15000 + 75% Agi] Magic Damage to enemies around the target. Cooldown 20s.',
-      'Passive: Deals 35% damage to the enemies around the target.',
+      'Passive: Deals 35% damage to tshe enemies around the target.',
     ],
-    crafting: ['Blaze Touch', 'Fire Stone'],
+    crafting: ["Blaze's Touch", 'Fire Stone'],
     source: 'Fire merchant',
   },
   Hatred: {

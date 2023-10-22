@@ -51,7 +51,7 @@ export const Character: FC = () => {
         </Grid>
       </Grid>
 
-      <Divider />
+      <Divider sx={{ marginTop: '10px', marginBottom: '10px' }}/>
       <Typography>Press Load - it will set hotkey for A button.</Typography>
       <Typography>Head to wc3 and press A.</Typography>
       <Typography>Let it do its thing.</Typography>
@@ -65,7 +65,10 @@ export const Character: FC = () => {
           justifyContent: 'space-between',
         }}
       >
-        <Button variant="contained" onClick={() => onLoadClick(character)}>
+        <Button
+          variant="contained"
+          onClick={() => onLoadClick(character)}
+        >
           Load
         </Button>
         <Button onClick={() => onLoadClick(character, true)}>

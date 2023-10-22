@@ -1,5 +1,5 @@
 {
-  "description": "Tool for easy loading your custom maps save codes.",
+  "description": "Companion app for custom Wc3 map Twilights Eve Evo",
   "main": "./src/main/main.ts",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
@@ -69,6 +69,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
+    "@mui/x-tree-view": "^6.0.0-beta.0",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^6.1.4",
@@ -93,6 +94,7 @@
     "@types/webpack-bundle-analyzer": "^4.6.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
+    "babel-eslint": "^10.1.0",
     "browserslist-config-erb": "^0.0.3",
     "chalk": "^4.1.2",
     "concurrently": "^8.2.1",
@@ -105,18 +107,6 @@
     "electron-builder": "^24.6.4",
     "electron-devtools-installer": "^3.2.0",
     "electronmon": "^2.0.2",
-    "eslint": "^8.49.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-erb": "^4.1.0-0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-import-resolver-webpack": "^0.13.7",
-    "eslint-plugin-compat": "^4.2.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jest": "^27.4.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "identity-obj-proxy": "^3.0.0",
@@ -144,8 +134,8 @@
     "webpack-merge": "^5.9.0"
   },
   "build": {
-    "productName": "WC3SaveLoader",
-    "appId": "shr.WC3SaveLoader",
+    "productName": "Evo Helper",
+    "appId": "shr.EvoHelper",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [

@@ -2,11 +2,14 @@ import { FC } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import { grey } from '@mui/material/colors';
-import { evoItems } from './items';
+import { evoItems } from '../Evo/items';
 import ItemCard from './ItemCard';
 import { iconFromId } from '../../icons/icons';
+import { useNavigate } from 'react-router-dom';
 
-export const EvoItemRenderer: FC<{ id?: string }> = ({ id }) => {
+
+export const EvoItemRenderer: FC<{ id?: string, onClick?: () => void }> = ({ id, onClick }) => {
+  const navigate = useNavigate();
   if (!id) {
     return (
       <Avatar src={iconFromId('EmptySlotIcon')} variant="rounded">
@@ -25,11 +28,18 @@ export const EvoItemRenderer: FC<{ id?: string }> = ({ id }) => {
   }
   return (
     <Tooltip
-      sx={{ boxShadow: 3 }}
+      sx={{
+        boxShadow: 3
+      }}
       title={<ItemCard id={id} item={evoItems[id]} />}
       placement="right-start"
     >
-      <Avatar variant="rounded" src={iconFromId(evoItems[id].icon)} />
+      <Avatar
+        sx={{ cursor: 'pointer' }}
+        variant="rounded"
+        src={iconFromId(evoItems[id].icon)}
+        onClick={() => navigate(`/item/${id}`)}
+      />
     </Tooltip>
   );
 };

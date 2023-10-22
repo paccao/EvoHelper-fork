@@ -88,7 +88,7 @@ const godlyItemsNew: { [id: string]: EvoItem } = {
     id: 'Guardian Force',
     restriction: EvoItemRestictions.SWORDSMAN,
     rarity: EvoRarity.FORGED,
-    icon: 'Fate',
+    icon: 'GuardianForce',
     description:
       'From the realms of God, the Guardian Force is a relic that oaths to protect its wielder and destroy evil for good.',
     effects: [

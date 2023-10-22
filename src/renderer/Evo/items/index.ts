@@ -31,6 +31,7 @@ import { flameItems } from './forging/flame';
 import { forgottenCryptItems } from './easy/forgottenCrypt';
 import { fishingItems } from './fishing';
 import { cursedHeavenItems } from './mythic/cursedHeavenItems';
+import { imp3matsItems } from './merchants/imp3mats';
 
 export const evoItems = {
   ...fishingItems,
@@ -71,4 +72,5 @@ export const evoItems = {
   ...imp2Items,
   ...imp3Items,
   ...cursedHeavenItems,
+  ...imp3matsItems,
 };

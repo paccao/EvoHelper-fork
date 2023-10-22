@@ -42,11 +42,25 @@ ipcMain.on('load', async (event, arg, legacy) => {
 });
 
 ipcMain.on('settings_read', async (event) => {
-  const settings = await fs.readFile(
-    `${app.getPath('userData')}\\settings.json`,
-    'utf-8',
-  );
-  event.reply('settings_read', JSON.parse(settings));
+  try {
+    const settings = await fs.readFile(
+      `${app.getPath('userData')}\\settings.json`,
+      'utf-8',
+    );
+    const json = JSON.parse(settings);
+    const defaultWc3Path = `${app.getPath('documents')}\\Warcraft III`;
+    if (!json.wc3path) {
+      json.wc3path = defaultWc3Path;
+    }
+
+    event.reply('settings_read', json);
+  } catch (e) {
+    // smth went wrong, return default settings
+    event.reply('settings_read', {
+      wc3path: `${app.getPath('documents')}\\Warcraft III`,
+    });
+    return;
+  }
 });
 
 ipcMain.on('settings_write', async (event, arg) => {
