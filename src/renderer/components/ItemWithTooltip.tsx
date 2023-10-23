@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import { grey } from '@mui/material/colors';
-import { evoItems } from '../Evo/items';
+import { evoItems } from '../../constants/items';
 import ItemCard from './ItemCard';
 import { iconFromId } from '../../icons/icons';
 import { useNavigate } from 'react-router-dom';

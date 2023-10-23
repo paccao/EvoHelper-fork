@@ -1,13 +1,13 @@
 import Box, { BoxProps } from '@mui/material/Box';
-import { EvoItem } from '../Evo/items/item';
+import { EvoItem } from '../../constants/items/item';
 import { iconFromId } from '../../icons/icons';
-import { evoRarity } from '../Evo/rarity';
+import { evoRarity } from '../../constants/rarity';
 import Typography from '@mui/material/Typography';
 import { TreeView } from '@mui/x-tree-view/TreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
 import { grey, lightBlue } from '@mui/material/colors';
-import { evoItemRestrictions } from '../Evo/restrictions';
-import { evoItems } from '../Evo/items';
+import { evoItemRestrictions } from '../../constants/restrictions';
+import { evoItems } from '../../constants/items';
 import Avatar from '@mui/material/Avatar';
 
 interface EvoItemProps extends BoxProps {

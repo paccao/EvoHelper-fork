@@ -2,9 +2,9 @@ import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { lightBlue } from '@mui/material/colors';
-import { evoRarity } from '../Evo/rarity';
-import { evoItemRestrictions } from '../Evo/restrictions';
-import { EvoItem } from '../Evo/items/item';
+import { evoRarity } from '../../constants/rarity';
+import { evoItemRestrictions } from '../../constants/restrictions';
+import { EvoItem } from '../../constants/items/item';
 
 const ItemCard: FC<{ item: EvoItem; id: string }> = ({ item, id }) => {
   const { color } = evoRarity[item.rarity];

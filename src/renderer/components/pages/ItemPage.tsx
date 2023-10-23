@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { evoItems } from '../../Evo/items';
+import { evoItems } from '../../../constants/items';
 import { EvoItem } from '../Item';
 
 export function ItemPage() {

@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs/promises';
-import { allClasses } from '../constants/evo/classes';
+import { allClasses } from '../constants/classes';
 
 type Loadout = string[];
 export interface Class {

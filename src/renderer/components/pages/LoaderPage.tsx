@@ -3,7 +3,7 @@ import { useCharacterContext } from '../../../context';
 import { CharacterCard } from '../CharacterCard';
 import { useSettingsContext } from '../../../settingsContext';
 import { useMemo } from 'react';
-import { tier4Classes } from '../../../constants/evo/classes';
+import { tier4Classes } from '../../../constants/classes';
 
 export function LoaderPage() {
   const { allClasses } = useCharacterContext();

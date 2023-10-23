@@ -1,6 +1,6 @@
 import { EvoItemRestictions } from '../restrictions';
 import { EvoRarity } from '../rarity';
-import { Icon } from '../../../icons/icons';
+import { Icon } from '../../icons/icons';
 
 export interface EvoItem {
   id: string;

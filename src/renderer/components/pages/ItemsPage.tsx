@@ -1,7 +1,7 @@
 import { ChangeEvent, useMemo, useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import { Input, InputProps } from '@mui/material';
-import { evoItems } from '../../Evo/items';
+import { evoItems } from '../../../constants/items';
 import { EvoItemRenderer } from '../ItemWithTooltip';
 
 type DebounceProps = {
