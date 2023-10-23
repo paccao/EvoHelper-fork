@@ -7,7 +7,7 @@ export const agonyItems: { [id: string]: EvoItem } = {
     id: "Agony",
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.GODLY,
-    icon: 'BTNGreenHydra',
+    icon: 'Agony',
     description: 'The head of the Leviathan.',
     effects: [],
     source: 'Agony merchant',
@@ -16,7 +16,7 @@ export const agonyItems: { [id: string]: EvoItem } = {
     id: "Blessing of Agony",
     restriction: EvoItemRestictions.ULTIMATE_FORGE,
     rarity: EvoRarity.FORGED,
-    icon: 'BTNGreenHydra',
+    icon: 'BlessingOfAgony',
     description: 'The head of the Leviathan.',
     effects: [],
     crafting: [
