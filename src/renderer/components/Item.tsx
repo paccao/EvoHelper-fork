@@ -62,7 +62,7 @@ function ItemDependenciesTree(props: {item: EvoItem}) {
 
 function ItemDependency(props: {id: string; index: string;}) {
   const { id, index } = props;
-  const item = evoItems[id];
+  const item = evoItems[id as keyof typeof evoItems];
   const newIndex = index + '_' + id;
 
   if (!item) {
