@@ -55,7 +55,6 @@ export const SettingsProvider: FC<PropsWithChildren> = ({ children }) => {
 
   useEffect(() => {
     window.electron.ipcRenderer.on('settings_read', (arg: any) => {
-      console.log(arg);
       if (arg) {
         arg.hasOwnProperty('wc3path') && setWc3path(arg.wc3path);
         arg.hasOwnProperty('battleTag') && setBattleTag(arg.battleTag);

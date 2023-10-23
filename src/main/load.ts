@@ -1,5 +1,6 @@
+import path from 'path';
 import fs from 'fs/promises';
-import { allClasses } from '../../../constants/evo/classes';
+import { allClasses } from '../constants/evo/classes';
 
 type Loadout = string[];
 export interface Class {
@@ -61,8 +62,8 @@ const parseClassFile = (str: string): Class => {
     }),
   };
 };
-const loadClass = async (path: string) => {
-  const classDir = await fs.readdir(path);
+const loadClass = async (p: string) => {
+  const classDir = await fs.readdir(p);
   const name = classDir
     .filter((el) => el.indexOf('[Level ') !== -1)
     .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
@@ -72,20 +73,21 @@ const loadClass = async (path: string) => {
     return null;
   }
 
-  const classFile = await fs.readFile(`${path}\\${name}`, 'utf-8');
+  const classFile = await fs.readFile(
+    path.join(p, name),
+    'utf-8'
+  );
 
   return Object.assign(parseClassFile(classFile), {
     level: name?.slice(6, name && name.length ? name.length - 5 : 0),
   });
 };
 
-export const loadTevefData = async (path: string) => {
-  const potentialClasses = await fs.readdir(path);
+export const loadTevefData = async (p: Array<string>) => {
+  const potentialClasses = await fs.readdir(path.join(...p));
   const classes = potentialClasses.filter((el) => allClasses.includes(el));
 
-  const data = await Promise.all(
-    classes.map((cl) => loadClass(`${path}\\${cl}`)),
+  return await Promise.all(
+    classes.map((cl) => loadClass(path.join(...p, cl))),
   );
-
-  return data;
 };

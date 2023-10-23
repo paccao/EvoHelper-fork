@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react';
 import { useSettingsContext } from './settingsContext';
-import { Class } from './main/maps/evo/load';
+import { Class } from './main/load';
 
 interface CharacterContext {
   allClasses: Class[];
@@ -23,7 +23,13 @@ export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
   const loadClasses = () => {
     window.electron.ipcRenderer.sendMessage(
       'ipc',
-      `${wc3path}\\CustomMapData\\Twilight's Eve Evo\\${battleTag}`,
+      // probably should get rid of contant path parts in 'frontend'
+      [
+        wc3path,
+        'CustomMapData',
+        "Twilight's Eve Evo",
+        battleTag
+      ]
     );
   };
   const getCharacterById = (id?: string) => {

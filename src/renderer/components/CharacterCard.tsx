@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
-import { Class } from '../../main/maps/evo/load';
+import { Class } from '../../main/load';
 import { useCharacterContext } from '../../context';
 import { EvoStash } from './Stash';
 import { Button } from '@mui/material';

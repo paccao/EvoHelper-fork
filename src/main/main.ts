@@ -13,7 +13,7 @@ import { app, BrowserWindow, shell, ipcMain, globalShortcut } from 'electron';
 import fs from 'fs/promises';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
-import { loadTevefData } from './maps/evo/load';
+import { loadTevefData } from './load';
 import { executeCommand } from './dirt/keyboard';
 
 let mainWindow: BrowserWindow | null = null;
@@ -23,7 +23,7 @@ ipcMain.on('ipc', async (event, arg) => {
   event.reply('ipc', data);
 });
 
-ipcMain.on('load', async (event, arg, legacy) => {
+ipcMain.on('load', async (event, arg) => {
   // clear previous hotkey forcefully
   globalShortcut.unregister('A');
   globalShortcut.register('A', async () => {
@@ -39,11 +39,11 @@ ipcMain.on('load', async (event, arg, legacy) => {
 ipcMain.on('settings_read', async (event) => {
   try {
     const settings = await fs.readFile(
-      `${app.getPath('userData')}\\settings.json`,
+      path.join(app.getPath('userData'), 'settings.json'),
       'utf-8',
     );
     const json = JSON.parse(settings);
-    const defaultWc3Path = `${app.getPath('documents')}\\Warcraft III`;
+    const defaultWc3Path = path.join(app.getPath('documents'), 'Warcraft III');
     if (!json.wc3path) {
       json.wc3path = defaultWc3Path;
     }
@@ -52,7 +52,7 @@ ipcMain.on('settings_read', async (event) => {
   } catch (e) {
     // smth went wrong, return default settings
     event.reply('settings_read', {
-      wc3path: `${app.getPath('documents')}\\Warcraft III`,
+      wc3path: path.join(app.getPath('documents'), 'Warcraft III'),
     });
     return;
   }
@@ -61,7 +61,7 @@ ipcMain.on('settings_read', async (event) => {
 ipcMain.on('settings_write', async (event, arg) => {
   try {
     await fs.writeFile(
-      `${app.getPath('userData')}\\settings.json`,
+      path.join(app.getPath('userData'), 'settings.json'),
       JSON.stringify(arg),
     );
     event.reply('settings_write', true);
