@@ -22,12 +22,7 @@ export const SettingsContext = createContext({} as ISettingsContext);
 export const SettingsProvider: FC<PropsWithChildren> = ({ children }) => {
   const [wc3path, setWc3path] = useState<string>('');
   const [battleTag, setBattleTag] = useState<string>('');
-  const [extraLines, setExtra] = useState<string>(
-    '-woff\n' +
-    '-c\n' +
-    'https://github.com/ArgentumHeart/EvoHelper\n' +
-    'v0.3.0',
-  );
+  const [extraLines, setExtra] = useState<string>('-woff\n-c\n');
   const [onlyT4Classes, setOnlyT4Classes] = useState<boolean>(false);
 
   const value = useMemo(

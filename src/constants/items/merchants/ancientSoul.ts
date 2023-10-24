@@ -54,7 +54,7 @@ export const ancientSoul: { [id: string]: EvoItem } = {
     id: 'Diamond',
     restriction: EvoItemRestictions.FORGING_MATERIAL,
     rarity: EvoRarity.GODLY,
-    icon: 'GoldenFragment',
+    icon: 'Diamond',
     description:
       'The rarest gemstone to be ever discovered. It shimmers very brightly and makes light bend on its surface.',
     effects: [],
