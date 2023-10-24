@@ -28,7 +28,8 @@ export const mysteryItems: { [id: string]: EvoItem } = {
     rarity: EvoRarity.GODLY,
     icon: 'Mystical',
     description: 'An unknown force.',
-    effects: [
+    effects: [],
+    crafting: [
       'Mythical Weapon Piece',
       'Mythical Armor Piece',
       'Mythical Handle Piece',
@@ -47,6 +48,7 @@ export const mysteryItems: { [id: string]: EvoItem } = {
       'Dragon Tooth',
       'Dragon Egg',
       'Blessing of Dragon',
+      'Nether Reactor',
     ],
     source: 'Mystery forging items',
   },
