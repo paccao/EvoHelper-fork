@@ -191,6 +191,8 @@ import { fishingIcon } from './fishing';
 import { forgottenCryptIcons } from './forgottenCrypt';
 import { imp3matsIcons } from './imp3mats';
 import { agonyIcons } from './agony';
+import { aghanimIcons } from './aghanim';
+import { m1CraftIcons } from './m1Craft';
 
 const icons = {
   EmptySlotIcon,
@@ -380,6 +382,8 @@ const icons = {
   ...flameIcons,
   ...imp3matsIcons,
   ...agonyIcons,
+  ...aghanimIcons,
+  ...m1CraftIcons,
 };
 
 export const iconFromId = (id: keyof typeof icons): string => {

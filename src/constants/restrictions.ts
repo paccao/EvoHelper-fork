@@ -31,6 +31,7 @@ export enum EvoItemRestictions {
   ACOLYTE = 29,
   NINJA = 30,
   PROFESSION = 31,
+  AC_CA = 32,
 }
 
 export const evoItemRestrictions = {
@@ -66,4 +67,5 @@ export const evoItemRestrictions = {
   [EvoItemRestictions.ACOLYTE]: 'Acolyte class only',
   [EvoItemRestictions.NINJA]: 'Ninja class only',
   [EvoItemRestictions.PROFESSION]: 'Profession item',
+  [EvoItemRestictions.AC_CA]: 'Acolyte, Caster class only',
 };

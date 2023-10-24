@@ -5,40 +5,46 @@ export const enum EvoRarity {
   'EPIC' = 4,
   'LEGENDARY' = 5,
   'GODLY' = 6,
-  'FORGED' = 7,
+  'MYTHIC' = 7,
+  'FORGED' = 8,
 }
 export const evoRarity = {
-  1: {
+  [EvoRarity.COMMON]: {
     id: EvoRarity.COMMON,
     name: 'Common',
     color: '#999999',
   },
-  2: {
+  [EvoRarity.UNCOMMON]: {
     id: EvoRarity.UNCOMMON,
     name: 'Uncommon',
     color: '#00FF00',
   },
-  3: {
+  [EvoRarity.RARE]: {
     id: EvoRarity.RARE,
     name: 'Rare',
     color: '#4A86E8',
   },
-  4: {
+  [EvoRarity.EPIC]: {
     id: EvoRarity.EPIC,
     name: 'Epic',
     color: '#9900FF',
   },
-  5: {
+  [EvoRarity.LEGENDARY]: {
     id: EvoRarity.LEGENDARY,
     name: 'Legendary',
     color: '#FF0000',
   },
-  6: {
+  [EvoRarity.GODLY]: {
     id: EvoRarity.GODLY,
     name: 'Godly',
     color: '#FFFF00',
   },
-  7: {
+  [EvoRarity.MYTHIC]: {
+    id: EvoRarity.MYTHIC,
+    name: 'Mythic',
+    color: '#EE82EE',
+  },
+  [EvoRarity.FORGED]: {
     id: EvoRarity.FORGED,
     name: 'Forged',
     color: '#8B4513',

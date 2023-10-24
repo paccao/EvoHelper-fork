@@ -34,6 +34,7 @@ import { cursedHeavenItems } from './mythic/cursedHeavenItems';
 import { imp3matsItems } from './merchants/imp3mats';
 import { headItems } from './merchants/heads';
 import { agonyItems } from './merchants/agony';
+import { aghanimItems } from './mythic/aghanim';
 
 export const evoItems = {
   ...fishingItems,
@@ -77,4 +78,5 @@ export const evoItems = {
   ...imp3matsItems,
   ...headItems,
   ...agonyItems,
+  ...aghanimItems,
 };
