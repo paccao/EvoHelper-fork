@@ -35,6 +35,7 @@ import { imp3matsItems } from './merchants/imp3mats';
 import { headItems } from './merchants/heads';
 import { agonyItems } from './merchants/agony';
 import { aghanimItems } from './mythic/aghanim';
+import { alterEgoItems } from './mythic/alterEgoItems';
 
 export const evoItems = {
   ...fishingItems,
@@ -79,4 +80,5 @@ export const evoItems = {
   ...headItems,
   ...agonyItems,
   ...aghanimItems,
+  ...alterEgoItems,
 };

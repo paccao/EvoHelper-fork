@@ -87,8 +87,8 @@ function ItemDependency(props: {id: string; index: string;}) {
         </Box>
       }>
       {
-        item.crafting?.map((craftingId: string) => (
-          <ItemDependency key={newIndex + craftingId} index={newIndex} id={craftingId} />
+        item.crafting?.map((craftingId, index) => (
+          <ItemDependency key={newIndex + craftingId + '_' + index} index={newIndex} id={craftingId} />
         ))
       }
     </TreeItem>
