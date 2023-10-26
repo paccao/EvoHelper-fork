@@ -95,7 +95,7 @@ function ItemDependency(props: {id: string; index: string;}) {
   )
 }
 
-function ItemIconAndTitle (props: {item: EvoItem}) {
+export function ItemIconAndTitle (props: {item: EvoItem}) {
   const { item } = props;
   return (
     <Box sx={{display:'flex', flexDirection:'row', alingItems: 'center'}}>

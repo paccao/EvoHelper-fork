@@ -27,6 +27,7 @@ import BTNGreenHydra from './png/wc3/BTNGreenHydra.png';
 import BTNOrbOfFire from './png/wc3/BTNOrbOfFire.png';
 import TheOnesHead from './png/wc3/TheOnesHead.png';
 import BTNMetamorphosis from './png/wc3/BTNMetamorphosis.png';
+import SparkOfJoy from './png/evo/special/SparkOfJoy.png';
 
 // Hard 1 (Evo)
 import BTNBelt from './png/wc3/BTNBelt.png';
@@ -364,6 +365,7 @@ const icons = {
   BTNOrbOfFire,
   TheOnesHead,
   BTNMetamorphosis,
+  SparkOfJoy,
 
   ...forgottenCryptIcons,
   ...fishingIcon,

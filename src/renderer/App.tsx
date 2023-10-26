@@ -7,13 +7,13 @@ import CachedIcon from '@mui/icons-material/Cached';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import Settings from './components/pages/Settings';
+import Settings from './pages/Settings';
 import { Character } from './components/Character';
 import theme from './theme';
 import { useCharacterContext } from '../context';
-import { ItemsPage } from './components/pages/ItemsPage';
-import { LoaderPage } from './components/pages/LoaderPage';
-import { ItemPage } from './components/pages/ItemPage';
+import { ItemsPage } from './pages/ItemsPage';
+import { LoaderPage } from './pages/LoaderPage';
+import { ItemPage } from './pages/ItemPage';
 
 export default function App() {
   const { loadClasses } = useCharacterContext();

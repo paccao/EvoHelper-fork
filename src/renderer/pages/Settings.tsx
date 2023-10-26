@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
-import { useSettingsContext } from '../../../settingsContext';
+import { useSettingsContext } from '../../settingsContext';
 
 export default function Settings() {
   const {
@@ -15,15 +15,8 @@ export default function Settings() {
     setExtra,
     setBattleTag,
     setWc3path,
+    save,
   } = useSettingsContext();
-  const onSave = () => {
-    window.electron.ipcRenderer.sendMessage('settings_write', {
-      wc3path,
-      battleTag,
-      extraLines,
-      onlyT4Classes,
-    });
-  };
   return (
     <Box
       sx={{
@@ -71,7 +64,7 @@ export default function Settings() {
         maxRows={10}
       />
       <Box sx={{ padding: '10px' }}>
-        <Button onClick={onSave} sx={{ width: '100px' }}>
+        <Button onClick={() => save()} sx={{ width: '100px' }}>
           Save
         </Button>
       </Box>

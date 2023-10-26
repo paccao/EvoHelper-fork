@@ -36,8 +36,11 @@ import { headItems } from './merchants/heads';
 import { agonyItems } from './merchants/agony';
 import { aghanimItems } from './mythic/aghanim';
 import { alterEgoItems } from './mythic/alterEgoItems';
+import { EvoItemRestictions } from '../restrictions';
+import { EvoRarity } from '../rarity';
+import { EvoItem } from './item';
 
-export const evoItems = {
+export const evoItems: {[id: string]: EvoItem} = {
   ...fishingItems,
   ...pieces,
   // vendors
@@ -81,4 +84,13 @@ export const evoItems = {
   ...agonyItems,
   ...aghanimItems,
   ...alterEgoItems,
+  'Spark of Joy': {
+    id: 'Spark of Joy',
+    restriction: EvoItemRestictions.ALL_CLASSES,
+    rarity: EvoRarity.GODLY,
+    icon: 'SparkOfJoy',
+    description: 'rip M1 dungeon',
+    effects:[],
+    source: 'engame nubs',
+  }
 };

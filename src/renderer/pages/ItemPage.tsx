@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import { evoItems } from '../../../constants/items';
-import { EvoItem } from '../Item';
+import { evoItems } from '../../constants/items';
+import { EvoItem } from '../components/Item';
 
 export function ItemPage() {
   const { id } = useParams();

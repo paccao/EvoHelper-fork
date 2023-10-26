@@ -1,8 +1,8 @@
 import { ChangeEvent, useMemo, useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import { Input, InputProps } from '@mui/material';
-import { evoItems } from '../../../constants/items';
-import { EvoItemRenderer } from '../ItemWithTooltip';
+import { evoItems } from '../../constants/items';
+import { EvoItemRenderer } from '../components/ItemWithTooltip';
 
 type DebounceProps = {
   handleDebounce: (value: string) => void;
