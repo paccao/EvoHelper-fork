@@ -148,7 +148,7 @@ export const fireItems: { [id: string]: EvoItem } = {
     description:
       'By concentrating the fiery element of the orb of the dragon, the power of hell is unleashed.',
     effects: ['+500 All stats', '+20% Cooldown Reduction'],
-    crafting: ['Ledendary Dragon Orb', 'Fire Stone'],
+    crafting: ['Legendary Dragon Orb', 'Fire Stone'],
     source: 'Fire merchant',
   },
   Remorse: {
