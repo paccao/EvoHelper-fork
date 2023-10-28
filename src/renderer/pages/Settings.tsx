@@ -50,7 +50,7 @@ export default function Settings() {
       >
         <Typography>Show only t4 classes</Typography>
         <Switch
-          value={onlyT4Classes}
+          checked={onlyT4Classes}
           onChange={(e) => setOnlyT4Classes(e.target.checked)}
         />
       </Box>
