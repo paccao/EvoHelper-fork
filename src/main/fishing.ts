@@ -42,7 +42,7 @@ export function disarmFishing() {
 }
 export function armFishing(rodHotkey: any) {
   disarmFishing();
-  globalShortcut.register('Control+9', () => {
+  globalShortcut.register('CommandOrControl+9', () => {
     if(!checkInterval && !startInterval) {
       click(rodHotkey);
       startInterval = setInterval(() => {
@@ -51,7 +51,7 @@ export function armFishing(rodHotkey: any) {
       checkInterval = fishingCheckInterval(1000 * 0.4);
     }
   });
-  globalShortcut.register('Control+-', () => {
+  globalShortcut.register('CommandOrControl+0', () => {
     if(!checkInterval && !startInterval) {
       click(rodHotkey);
       startInterval = setInterval(() => {
@@ -60,14 +60,14 @@ export function armFishing(rodHotkey: any) {
       checkInterval = fishingCheckInterval(1000 * 1.5);
     }
   });
-  globalShortcut.register('Control+=', () => {
+  globalShortcut.register('CommandOrControl+-', () => {
    try {
       clearInterval(checkInterval);
       clearInterval(startInterval);
       checkInterval = undefined;
       startInterval = undefined;
     } catch (e) {
-     
+
    }
   });
 }
