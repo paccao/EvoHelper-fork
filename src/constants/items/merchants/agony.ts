@@ -8,17 +8,17 @@ export const agonyItems: { [id: string]: EvoItem } = {
     restriction: EvoItemRestictions.FORGE,
     rarity: EvoRarity.GODLY,
     icon: 'Agony',
-    description: 'The head of the Leviathan.',
+    description: 'How can you reach this far?',
     effects: [],
     source: 'Agony merchant',
-    sourceShort: '2M gold, 2k shards'
+    sourceShort: '4M gold, 2k shards'
   },
   "Blessing of Agony": {
     id: "Blessing of Agony",
     restriction: EvoItemRestictions.ULTIMATE_FORGE,
     rarity: EvoRarity.FORGED,
     icon: 'BlessingOfAgony',
-    description: 'The head of the Leviathan.',
+    description: 'Sleepless nights.',
     effects: [],
     crafting: [
       'Essence of Nightmare',

@@ -7,6 +7,7 @@ import CursedBlade from './png/evo/angelSun/CursedBlade.png';
 import StarlightCrystal from './png/evo/angelSun/StarlightCrystal.png';
 import BlindingLightOfDestiny from './png/evo/angelSun/BliningLightOfDestiny.png';
 import DragonforgePlate from './png/evo/angelSun/DragonforgePlate.png';
+import BladeOfDespair from './png/evo/angelSun/BladeOfDespair.png';
 
 export const angelSunIcons = {
   LegendOfFreya,
@@ -18,4 +19,5 @@ export const angelSunIcons = {
   StarlightCrystal,
   BlindingLightOfDestiny,
   DragonforgePlate,
+  BladeOfDespair,
 };

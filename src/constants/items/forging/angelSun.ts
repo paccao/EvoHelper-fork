@@ -190,7 +190,7 @@ export const angelSunItems: { [id: string]: EvoItem } = {
     id: 'Blade of Despair',
     restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.FORGED,
-    icon: 'DragonforgePlate',
+    icon: 'BladeOfDespair',
     description:
       'A tainted blade with the indent of only executing foes, the perfect weapon for genocide.',
     effects: [

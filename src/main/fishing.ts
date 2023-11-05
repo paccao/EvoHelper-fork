@@ -57,7 +57,7 @@ export function armFishing(rodHotkey: any) {
       startInterval = setInterval(() => {
         click(rodHotkey)
       }, 1000 * 5);
-      checkInterval = fishingCheckInterval(1000 * 1.5);
+      checkInterval = fishingCheckInterval(1000 * 1.4);
     }
   });
   globalShortcut.register('CommandOrControl+-', () => {
