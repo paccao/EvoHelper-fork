@@ -186,4 +186,25 @@ export const angelSunItems: { [id: string]: EvoItem } = {
     ],
     source: 'Angel of Sun',
   },
+  'Blade of Despair': {
+    id: 'Blade of Despair',
+    restriction: EvoItemRestictions.MELEE,
+    rarity: EvoRarity.FORGED,
+    icon: 'DragonforgePlate',
+    description:
+      'A tainted blade with the indent of only executing foes, the perfect weapon for genocide.',
+    effects: [
+      '+6000 Damage',
+      'Passive: Attacking an enemy with below 30% Health, gain 100% Bonus Damage and 20% bonus AS for 3seconds.',
+    ],
+    crafting: [
+      'The Ark Royal',
+      'Ultra Weapon Piece',
+      'Ultra Handle Piece',
+      'Diamond',
+      'Blessing of Darkness',
+      'Draconic Trinity',
+    ],
+    source: 'Angel of Sun',
+  },
 };
