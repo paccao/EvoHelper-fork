@@ -29,6 +29,8 @@ export function FishingPage() {
       <Typography variant="body2">Ctrl + 0: fish standard</Typography>
       <Typography variant="body2">Ctrl + -: pause</Typography>
 
+      <Typography variant="body1">Set 1920x1080 resolution for this to work.</Typography>
+
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="standard-label">Rod hotkey</InputLabel>
         <Select
