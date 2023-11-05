@@ -38,7 +38,7 @@ export function CharacterCard({ character, favourite }: CharacterCardProps) {
             sx={{ cursor: 'pointer' }}
             variant="body1"
           >
-            {character.hero} [{character.level}]
+            {character.hero} [ {character.level} ]
           </Typography>
           <IconButton onClick={() => !favourite ? addFavouriteClass(character.hero) : removeFavouriteClass(character.hero)}>
             {favourite ? <StarIcon /> : <StarBorderIcon />}

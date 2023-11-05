@@ -14,6 +14,7 @@ import { useCharacterContext } from '../context';
 import { ItemsPage } from './pages/ItemsPage';
 import { LoaderPage } from './pages/LoaderPage';
 import { ItemPage } from './pages/ItemPage';
+import { FishingPage } from './pages/FishingPage';
 
 export default function App() {
   const { loadClasses } = useCharacterContext();
@@ -56,6 +57,9 @@ export default function App() {
                 <MenuItem component={Link} to="/items">
                   Items
                 </MenuItem>
+                <MenuItem component={Link} to="/fishing">
+                  Fishing
+                </MenuItem>
               </MenuList>
             </Box>
             <Box sx={{ width: '100%', backgroundColor: '#121212' }}>
@@ -81,6 +85,7 @@ export default function App() {
               <Route path="/item/:id" element={<ItemPage/>}/>
               <Route path="/characters" element={<LoaderPage />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/fishing" element={<FishingPage />} />
               <Route path="/character/:id" element={<Character />} />
             </Routes>
             </Box>

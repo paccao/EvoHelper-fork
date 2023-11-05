@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { useParams } from 'react-router-dom';
 import { Button } from '@mui/material';
+import InfoIcon from '@mui/icons-material/Info';
 import Box from '@mui/material/Box';
 import Collapse from '@mui/material/Collapse';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -15,6 +16,7 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import { ItemIconAndTitle } from './Item';
 import { evoItems } from '../../constants/items';
 import { lightBlue } from '@mui/material/colors';
+import Tooltip from '@mui/material/Tooltip';
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -111,17 +113,12 @@ export const Character: FC = () => {
         }
       </Collapse>
       <Divider sx={{ marginTop: '10px', marginBottom: '10px' }}/>
-      <Typography>Press Load - it will set hotkey for A button.</Typography>
-      <Typography>Head to wc3 and press A.</Typography>
-      <Typography>Let it do its thing.</Typography>
-      <Typography>
-        Tip: remember to turn off caps lock and switch to English
-      </Typography>
+
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'space-between',
+          alignItems: 'center',
         }}
       >
         <Button
@@ -130,6 +127,20 @@ export const Character: FC = () => {
         >
           Load
         </Button>
+        <Tooltip
+          sx={{ marginLeft: '15px'}}
+          title={
+          <Box>
+            <Typography variant="body2">Press Load - it will set hotkey for A button.</Typography>
+            <Typography variant="body2">Head to wc3 and press A.</Typography>
+            <Typography variant="body2">Let it do its thing.</Typography>
+            <Typography variant="caption">
+              Tip: remember to turn off caps lock and switch to English
+            </Typography>
+        </Box>
+        }>
+          <InfoIcon color="primary"/>
+        </Tooltip>
       </Box>
     </div>
   );

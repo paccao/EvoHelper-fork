@@ -102,4 +102,13 @@ export const imp1Items: { [id: string]: EvoItem } = {
     source: 'City of Illusions',
     sourceShort: 'Imp 1',
   },
+  'Sphere of Doom': {
+    id: 'Sphere of Doom',
+    restriction: EvoItemRestictions.FORGE,
+    rarity: EvoRarity.GODLY,
+    icon: 'SphereOfDoom',
+    description: 'Misery.',
+    effects: [],
+    source: 'City of Illusions',
+  },
 };

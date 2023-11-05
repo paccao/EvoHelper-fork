@@ -39,6 +39,7 @@ import { alterEgoItems } from './mythic/alterEgoItems';
 import { EvoItemRestictions } from '../restrictions';
 import { EvoRarity } from '../rarity';
 import { EvoItem } from './item';
+import { hyruleProphetItems } from './mythic/hyruleProphet';
 
 export const evoItems: {[id: string]: EvoItem} = {
   ...fishingItems,
@@ -84,6 +85,7 @@ export const evoItems: {[id: string]: EvoItem} = {
   ...agonyItems,
   ...aghanimItems,
   ...alterEgoItems,
+  ...hyruleProphetItems,
   'Spark of Joy': {
     id: 'Spark of Joy',
     restriction: EvoItemRestictions.ALL_CLASSES,

@@ -128,4 +128,13 @@ export const imp2Items: { [id: string]: EvoItem } = {
     source: 'Dragon Fortress',
     sourceShort: 'Imp 2',
   },
+  'Dragon Stone': {
+    id: 'Dragon Stone',
+    restriction: EvoItemRestictions.FORGE,
+    rarity: EvoRarity.GODLY,
+    icon: 'Dragonstone',
+    description: 'A stone of a mythical creature.',
+    effects: [],
+    source: 'Dragon Fortress',
+  },
 };

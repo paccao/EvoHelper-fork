@@ -11,6 +11,7 @@ export const agonyItems: { [id: string]: EvoItem } = {
     description: 'The head of the Leviathan.',
     effects: [],
     source: 'Agony merchant',
+    sourceShort: '2M gold, 2k shards'
   },
   "Blessing of Agony": {
     id: "Blessing of Agony",

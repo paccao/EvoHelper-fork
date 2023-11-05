@@ -79,7 +79,7 @@ const loadClass = async (p: string) => {
   );
 
   return Object.assign(parseClassFile(classFile), {
-    level: name?.slice(6, name && name.length ? name.length - 5 : 0),
+    level: name?.slice(7, name && name.length ? name.length - 5 : 0),
   });
 };
 

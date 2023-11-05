@@ -28,6 +28,8 @@ import BTNOrbOfFire from './png/wc3/BTNOrbOfFire.png';
 import TheOnesHead from './png/wc3/TheOnesHead.png';
 import BTNMetamorphosis from './png/wc3/BTNMetamorphosis.png';
 import SparkOfJoy from './png/evo/special/SparkOfJoy.png';
+import SphereOfDoom from './png/evo/SphereOfDoom.png';
+import Dragonstone from './png/evo/Dragonstone.png';
 
 // Hard 1 (Evo)
 import BTNBelt from './png/wc3/BTNBelt.png';
@@ -194,6 +196,7 @@ import { imp3matsIcons } from './imp3mats';
 import { agonyIcons } from './agony';
 import { aghanimIcons } from './aghanim';
 import { m1CraftIcons } from './m1Craft';
+import { hyruleProphetIcons } from './hyruleProphetIcons';
 
 const icons = {
   EmptySlotIcon,
@@ -366,6 +369,9 @@ const icons = {
   TheOnesHead,
   BTNMetamorphosis,
   SparkOfJoy,
+  SphereOfDoom,
+  Dragonstone,
+
 
   ...forgottenCryptIcons,
   ...fishingIcon,
@@ -386,6 +392,7 @@ const icons = {
   ...agonyIcons,
   ...aghanimIcons,
   ...m1CraftIcons,
+  ...hyruleProphetIcons,
 };
 
 export const iconFromId = (id: keyof typeof icons): string => {

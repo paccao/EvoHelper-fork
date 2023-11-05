@@ -15,6 +15,7 @@ import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 import { loadTevefData } from './load';
 import { executeCommand } from './dirt/keyboard';
+import { armFishing, disarmFishing } from './fishing';
 
 let mainWindow: BrowserWindow | null = null;
 
@@ -34,6 +35,13 @@ ipcMain.on('load', async (event, arg) => {
         await executeCommand(command);
     }
   });
+});
+
+ipcMain.on('fishing_arm', async (event, arg) => {
+  armFishing(arg);
+});
+ipcMain.on('fishing_disarm', async (event, arg) => {
+  disarmFishing();
 });
 
 ipcMain.on('settings_read', async (event) => {
