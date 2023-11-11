@@ -186,7 +186,13 @@ export const angelNature: { [id: string]: EvoItem } = {
       '+70 Mana Regen',
       '+15% Cooldown Reduction',
     ],
-    crafting: ['Brightstar', 'Mystical', 'Draconic Trinity'],
+    crafting: [
+      'Mystral Staff',
+      'Ruby',
+      'Sealed Demise',
+      'Mythical Handle Piece',
+      'Draconic Trinity'
+    ],
     source: 'Angel of Nature',
   },
   Windspeaker: {
