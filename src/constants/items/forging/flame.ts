@@ -78,7 +78,7 @@ export const flameItems: { [id: string]: EvoItem } = {
       'Active: Blocks all incoming Magic Damage for the next 6 seconds. Cooldown 30s.',
       'Passive: Reduces Magic Damage taken by 8%.',
     ],
-    crafting: ['Royal Crown', 'Fire Stone'],
+    crafting: ['Royal Crown', 'Light Synthesis'],
     source: 'Flame merchant',
   },
   "Queen's Royal Crown": {
@@ -94,7 +94,7 @@ export const flameItems: { [id: string]: EvoItem } = {
       'Active: Blocks all incoming Magic Damage for the next 6 seconds. Cooldown 30s.',
       'Passive: +10% Cooldown reduction.',
     ],
-    crafting: ['Royal Crown', 'Fire Stone'],
+    crafting: ['Royal Crown', 'Light Synthesis'],
     source: 'Flame merchant',
   },
   'Imperial Royal Crown': {
@@ -110,7 +110,7 @@ export const flameItems: { [id: string]: EvoItem } = {
       'Active: Blocks all incoming Magic Damage for the next 6 seconds. Cooldown 30s.',
       'Passive: Increases Damage Dealt by 8%.',
     ],
-    crafting: ['Royal Crown', 'Fire Stone'],
+    crafting: ['Royal Crown', 'Light Synthesis'],
     source: 'Flame merchant',
   },
   Uranus: {
