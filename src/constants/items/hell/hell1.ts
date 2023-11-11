@@ -48,8 +48,8 @@ export const hell1Items: { [id: string]: EvoItem } = {
     source: 'Oblivion',
     sourceShort: 'h1',
   },
-  'Double-barrel Rifle': {
-    id: 'Double-barrel Rifle',
+  'Double-Barrel Rifle': {
+    id: 'Double-Barrel Rifle',
     restriction: EvoItemRestictions.ARCHER,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNINV_Weapon_Rifle_08',
