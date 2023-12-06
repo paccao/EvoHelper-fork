@@ -167,7 +167,7 @@ export const alterEgoItems: { [id: string]: EvoItem } = {
     ],
     crafting: [
       'Cursed Blade',
-      'Harbinger\'s Heart ',
+      "Harbinger's Heart",
       'Blessing of Darkness',
       'Sphere of Doom',
       'Fire Stone',

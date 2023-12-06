@@ -11,6 +11,15 @@ export const hyruleProphetItems: { [id: string]: EvoItem } = {
     description:
       "The rise of the archangels.",
     effects: [],
+    crafting:
+    [
+      'Angel Creation',
+      'Angel Feather',
+      'Angel Fire',
+      'Angelic Heart',
+      'Pure Ignited Incinerator',
+      'Pure Light Synthesis',
+    ],
     source: 'Cursed Heaven',
   },
   'Angelic Heart': {

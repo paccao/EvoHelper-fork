@@ -22,6 +22,8 @@ export const tier4Classes = [
   'Mystic',
   'Stargazer',
   'Valkyrie',
+  'Paladin',
+  'Rhapsody',
   'Demon Incarnate',
 ];
 
@@ -56,6 +58,9 @@ export const allClasses = [
   'Crusader',
   'Imperial Knight',
   'Acolyte',
+  'Fairy',
+  'Sprite',
+  'Astronomer',
   'Cleric',
   'Priest',
   'Matriarch',
@@ -96,4 +101,6 @@ export const allClasses = [
   'Acolyte (F)',
   'Cleric (F)',
   'Valkyrie',
+  'Paladin',
+  'Rhapsody',
 ];
