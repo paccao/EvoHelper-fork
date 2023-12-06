@@ -42,7 +42,7 @@ export const hell2Items: { [id: string]: EvoItem } = {
   },
   "Angel's Sanctuary": {
     id: "Angel's Sanctuary",
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNArcaneShield',
     description:
@@ -64,18 +64,18 @@ export const hell2Items: { [id: string]: EvoItem } = {
   },
   Brightstar: {
     id: 'Brightstar',
-    restriction: EvoItemRestictions.ALL_CLASSES,
+    restriction: EvoItemRestictions.MELEE_AGI,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNShuriken3',
     description:
       'Forged with starlight magic, the Brightstar is a very powerful weapon used by A ranked ninjas when performing dangerous assassinations.',
-    effects: ['+525 Agility', '+5% Cooldown reduction'],
+    effects: ['+650 Agility'],
     source: 'Abyssal Labyrinth',
     sourceShort: 'h2',
   },
   "Dawn's Legacy": {
     id: "Dawn's Legacy",
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNAbility_Rogue_Sprint',
     description:

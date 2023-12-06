@@ -16,7 +16,7 @@ export const bobBuilderItems: { [id: string]: EvoItem } = {
   },
   "Hades' Artifact": {
     id: "Hades' Artifact",
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNArcaniteArmor',
     description:

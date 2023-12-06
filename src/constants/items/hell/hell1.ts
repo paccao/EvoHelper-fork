@@ -17,7 +17,7 @@ export const hell1Items: { [id: string]: EvoItem } = {
   },
   'Battle Gauntlets': {
     id: 'Battle Gauntlets',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.EPIC,
     icon: 'BTNGauntletsOfOgrePower',
     description:

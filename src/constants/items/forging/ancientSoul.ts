@@ -57,21 +57,21 @@ export const ancientSoulItems: { [id: string]: EvoItem } = {
     ],
     source: 'Ancient Soul',
   },
-  'Wind Glove': {
-    id: 'Wind Glove',
+  'Windtalker': {
+    id: 'Windtalker',
     restriction: EvoItemRestictions.CHUNIN,
     rarity: EvoRarity.FORGED,
     icon: 'BTNWindGlove',
     description:
       'The glove of elite ninjas, enhancing grip and makes wielding kunais easier.',
     effects: [
-      '+800 Agility',
-      '+8% Cooldown reduction',
+      '+1075 Agility',
+      '+5% Cooldown reduction',
       'Passive: Shunpo deals additional 75% damage.',
     ],
     crafting: [
       'Contúirteacha',
-      'Ultra Handle Piece',
+      'Mythical Handle Piece',
       'Mega Handle Piece',
       'Sealed Demise',
       "Harbinger's Essence",

@@ -45,7 +45,7 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
   },
   'Moon Armor': {
     id: 'Moon Armor',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNMoonArmor',
     description:
@@ -65,7 +65,7 @@ export const icyHighlandItems: { [id: string]: EvoItem } = {
   },
   Frostfang: {
     id: 'Frostfang',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.RARE,
     icon: 'BTNThoriumMelee',
     description:

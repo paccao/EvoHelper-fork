@@ -6,7 +6,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   // Weapons Master
   'Blade of the Ruined King': {
     id: 'Blade of the Ruined King',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNAAA_BotRK',
     description:
@@ -48,7 +48,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   },
   'Emerald Blade': {
     id: 'Emerald Blade',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTN_BladeG',
     description:
@@ -71,7 +71,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   },
   'Crystallized Emerald Blade': {
     id: 'Crystallized Emerald Blade',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'BTNEmbarBlade',
     description:
@@ -110,7 +110,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   },
   'Hand of God': {
     id: 'Hand of God',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNSpell_Holy_Devotion',
     description:
@@ -161,7 +161,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   },
   'The Executioner': {
     id: 'The Executioner',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNINV_Weapon_Halberd_11',
     description:
@@ -177,7 +177,7 @@ export const weaponsMasterItems: { [id: string]: EvoItem } = {
   },
   'Song of Ice': {
     id: 'Song of Ice',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNBladeoftheFrostWarrior',
     description:

@@ -65,7 +65,7 @@ export const armorsmithItems: { [id: string]: EvoItem } = {
   },
   'Superior Vizima Gauntlets': {
     id: 'Superior Vizima Gauntlets',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNGlove',
     description:

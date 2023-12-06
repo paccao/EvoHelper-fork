@@ -44,7 +44,7 @@ export const weaponsDealerItems: { [id: string]: EvoItem } = {
   },
   Slicer: {
     id: 'Slicer',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.COMMON,
     icon: 'BTNSteelRanged',
     description:
@@ -74,7 +74,7 @@ export const weaponsDealerItems: { [id: string]: EvoItem } = {
   },
   'Claws of Striking': {
     id: 'Claws of Striking',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNShamanAdept',
     description:

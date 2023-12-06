@@ -58,7 +58,7 @@ export const sewersItems: { [id: string]: EvoItem } = {
   },
   'Shield of Unending Flame': {
     id: 'Shield of Unending Flame',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNSpell_Holy_BlessingOfProtection',
     description:

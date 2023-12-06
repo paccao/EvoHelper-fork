@@ -5,7 +5,7 @@ import { EvoRarity } from '../../rarity';
 export const banditLordItems: { [id: string]: EvoItem } = {
   'Flag of Triumph': {
     id: 'Flag of Triumph',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'FlagOfTriumph',
     description: 'The flag of victorious human empire.',
@@ -14,7 +14,7 @@ export const banditLordItems: { [id: string]: EvoItem } = {
   },
   Hyperstone: {
     id: 'Hyperstone',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'Hyperstone',
     description:
@@ -24,7 +24,7 @@ export const banditLordItems: { [id: string]: EvoItem } = {
   },
   'Plated Steel': {
     id: 'Plated Steel',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'PlatedSteel',
     description:

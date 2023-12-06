@@ -132,7 +132,7 @@ export const angelCloudsItems: { [id: string]: EvoItem } = {
   },
   Cryocell: {
     id: 'Cryocell',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.FORGED,
     icon: 'BTNRuneBladeFrost',
     description:

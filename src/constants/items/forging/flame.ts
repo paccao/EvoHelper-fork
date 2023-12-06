@@ -26,7 +26,7 @@ export const flameItems: { [id: string]: EvoItem } = {
     description:
       "Named after the beast of fiery death, these claws inflicts burning pain to the prey's wounds.",
     effects: [
-      '+1450 Agility',
+      '+1300 Agility',
       '+10% Cooldown Reduction',
       'Passive: Shunpo deals additional 100% damage.',
     ],
@@ -130,7 +130,7 @@ export const flameItems: { [id: string]: EvoItem } = {
   },
   'Scarlet Phantom': {
     id: 'Scarlet Phantom',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'ScarletPhantom',
     description:

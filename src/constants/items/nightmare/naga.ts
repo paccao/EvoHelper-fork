@@ -64,7 +64,7 @@ export const nagaItems: { [id: string]: EvoItem } = {
   },
   Frostbrand: {
     id: 'Frostbrand',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNFrostSword',
     description:

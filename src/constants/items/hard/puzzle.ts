@@ -50,7 +50,7 @@ export const puzzleItems: { [id: string]: EvoItem } = {
   },
   Chillrend: {
     id: 'Chillrend',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNSpell_Holy_RighteousnessAura',
     description: '',

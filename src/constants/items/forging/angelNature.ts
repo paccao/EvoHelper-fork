@@ -48,7 +48,7 @@ export const angelNature: { [id: string]: EvoItem } = {
   },
   'Final Emerald Blade': {
     id: 'Final Emerald Blade',
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.FORGED,
     icon: 'FinalEmeraldBlade',
     description:
@@ -168,11 +168,11 @@ export const angelNature: { [id: string]: EvoItem } = {
     description:
       'The shadow kunai used by professional ninjas to perform mass assasinations.',
     effects: [
-      '+1125 Agility',
+      '+1100 Agility',
       '+10% Cooldown Reduction',
       'Passive: Spellcast deals [4500 + 22.5% Agi] Pure Damage to all enemies within 350 AOE. Deals 200% against non-bosses.',
     ],
-    crafting: ['Brightstar', 'Mystical', 'Draconic Trinity'],
+    crafting: ['Doombringer', 'Mystical', 'Draconic Trinity'],
     source: 'Angel of Nature',
   },
   'Blasting Rod': {

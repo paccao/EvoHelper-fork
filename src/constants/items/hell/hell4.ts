@@ -17,12 +17,12 @@ export const hell4Items: { [id: string]: EvoItem } = {
   },
   Doombringer: {
     id: 'Doombringer',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNArcaniteRanged',
     description:
       'Forged by Doom himself, the Doombringer Champion Sword is a force to behold.',
-    effects: ['+3400 Damage', '+5000 Health'],
+    effects: ['+850 Agility', '+5% Cooldown speed'],
     source: 'Tristram',
     sourceShort: 'h4',
   },

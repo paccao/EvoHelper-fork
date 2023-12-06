@@ -75,7 +75,7 @@ export const hell3Items: { [id: string]: EvoItem } = {
   },
   'Time Sabres': {
     id: 'Time Sabres',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.LEGENDARY,
     icon: 'BTNTimeSabres',
     description:

@@ -14,7 +14,7 @@ export const centaurItems: { [id: string]: EvoItem } = {
   },
   'Enchanted Axe': {
     id: 'Enchanted Axe',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.UNCOMMON,
     icon: 'BTNOrcMeleeUpTwo',
     description: '',
@@ -50,7 +50,7 @@ export const centaurItems: { [id: string]: EvoItem } = {
   },
   "Warchief's Pride": {
     id: "Warchief's Pride",
-    restriction: EvoItemRestictions.ALL_EXCEPT_INITIATE,
+    restriction: EvoItemRestictions.ALL_CLASSES,
     rarity: EvoRarity.RARE,
     icon: 'BTNSpiritWalkerAdeptTraining',
     description: '',
@@ -68,7 +68,7 @@ export const centaurItems: { [id: string]: EvoItem } = {
   },
   'Sword of Blessed Flame': {
     id: 'Sword of Blessed Flame',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.EPIC,
     icon: 'BTNSpell_Holy_RetributionAura',
     description: '',

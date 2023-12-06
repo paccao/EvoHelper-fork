@@ -159,7 +159,7 @@ export const aghanimItems: { [id: string]: EvoItem } = {
   },
   'Sovereign Sword': {
     id: 'Sovereign Sword',
-    restriction: EvoItemRestictions.SW_THIEF_WH,
+    restriction: EvoItemRestictions.MELEE,
     rarity: EvoRarity.MYTHIC,
     icon: 'SovereignSword',
     description: 'The sword of the Almighty Ruler of the First Kingdom. Blessed by the angels, this sword wields divine power, the ability to take the sould of its victim as betrayal of the angel\'s orders.',
