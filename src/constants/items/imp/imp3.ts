@@ -115,7 +115,7 @@ export const imp3Items: { [id: string]: EvoItem } = {
   },
   'Fire Lotus': {
     id: 'Fire Lotus',
-    restriction: EvoItemRestictions.MELEE,
+    restriction: EvoItemRestictions.FORGING_MATERIAL,
     rarity: EvoRarity.GODLY,
     icon: 'FireLotusIcon',
     description: 'Burning Flower.',

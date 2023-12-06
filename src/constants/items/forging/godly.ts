@@ -40,7 +40,7 @@ const godlyItemsNew: { [id: string]: EvoItem } = {
     id: 'Cosmos',
     restriction: EvoItemRestictions.FAIRY,
     rarity: EvoRarity.FORGED,
-    icon: 'Aerielis',
+    icon: 'Cosmos',
     description: 'The origin of the universe.',
     effects: [
       '+4500 Damage',

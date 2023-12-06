@@ -93,6 +93,8 @@ export const imp2Items: { [id: string]: EvoItem } = {
     description: '',
     effects: [
       '+2000 Damage',
+      '+400 Agility',
+      '+20% Attack speed',
       'Passive: Second basic attack deals bonus 5,500 Pure Damage.',
     ],
     source: 'Dragon Fortress',

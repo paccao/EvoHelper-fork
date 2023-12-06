@@ -10,9 +10,7 @@ export const imp3matsItems: { [id: string]: EvoItem } = {
     icon: 'FireRising',
     description: 'Blinding fire.',
     effects: [],
-    crafting: [
-      'Fire Demon',
-    ],
+    crafting: [],
     source: 'Imp3Mats',
   },
   'Incinerator': {
