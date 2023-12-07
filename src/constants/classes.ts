@@ -60,6 +60,7 @@ export const allClasses = [
   'Acolyte',
   'Fairy',
   'Sprite',
+  'Constellation',
   'Astronomer',
   'Cleric',
   'Priest',
