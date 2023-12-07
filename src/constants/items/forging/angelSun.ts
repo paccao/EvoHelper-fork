@@ -207,4 +207,48 @@ export const angelSunItems: { [id: string]: EvoItem } = {
     ],
     source: 'Angel of Sun',
   },
+  'Sword of the Occult': {
+    id: 'Sword of the Occult',
+    restriction: EvoItemRestictions.MELEE_AGI,
+    rarity: EvoRarity.FORGED,
+    icon: 'SwordOfTheOccult',
+    description:
+      'The chosen weapon for performing occult rituals. A great evil energy glows from within, tainting the intent of the wielder for demonic purposes.',
+    effects: [
+      '+1100 Agility',
+      '+10% Cooldown speed',
+      'Passive: Spellcast increases next 3 basic attacks to deal 150% of total Damage. Cannot occur again until all attacks are consumed.',
+    ],
+    crafting: [
+      'Doombringer',
+      'Mythical Weapon Piece',
+      'Ruby',
+      "Harbinger's Essence",
+      'Mantle of Darkness',
+      'Draconic Trinity',
+    ],
+    source: 'Angel of Sun',
+  },
+  'Concentrated Energy': {
+    id: 'Concentrated Energy',
+    restriction: EvoItemRestictions.INT,
+    rarity: EvoRarity.FORGED,
+    icon: 'ConcentratedEnergy',
+    description:
+      'A force of natural energy, sealed inside a magic container. It is so dense that it becomes unstable to the touch, yet contains a powerful energy inside it.',
+    effects: [
+      '+1250 Intelligence',
+      '-10% Mana efficiency',
+      '+10% Magic damage'
+    ],
+    crafting: [
+      "Atlantean's Tome",
+      'Ocean Fragment',
+      'Sapphire',
+      "Harbinger's Essence",
+      'Mantle of Darkness',
+      'Draconic Trinity',
+    ],
+    source: 'Angel of Sun',
+  },
 };

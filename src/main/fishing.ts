@@ -3,8 +3,6 @@ import { keyboard, Key, screen, Point} from '@nut-tree/nut-js';
 
 let checkInterval: NodeJS.Timeout | undefined
 let startInterval: NodeJS.Timeout | undefined
-
-
 const click = async (button: Key) => {
   await keyboard.pressKey(button)
   await keyboard.releaseKey(button);

@@ -8,6 +8,8 @@ import StarlightCrystal from './png/evo/angelSun/StarlightCrystal.png';
 import BlindingLightOfDestiny from './png/evo/angelSun/BliningLightOfDestiny.png';
 import DragonforgePlate from './png/evo/angelSun/DragonforgePlate.png';
 import BladeOfDespair from './png/evo/angelSun/BladeOfDespair.png';
+import SwordOfTheOccult from './png/evo/angelSun/SwordOfTheOccult.png';
+import ConcentratedEnergy from './png/evo/angelSun/ConcentratedEnergy.png';
 
 export const angelSunIcons = {
   LegendOfFreya,
@@ -20,4 +22,6 @@ export const angelSunIcons = {
   BlindingLightOfDestiny,
   DragonforgePlate,
   BladeOfDespair,
+  SwordOfTheOccult,
+  ConcentratedEnergy,
 };
