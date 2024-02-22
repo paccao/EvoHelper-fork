@@ -8,6 +8,7 @@ import {
 } from 'react';
 import { useSettingsContext } from './settingsContext';
 import { Class } from './main/load';
+import { splitIntoChunks } from './main/util'
 
 interface CharacterContext {
   allClasses: Class[];
@@ -40,16 +41,14 @@ export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
   };
   const onLoadClick = (character: Class, legacy?: boolean) => {
     if (character && character.code) {
+      const loadCodeChunks = splitIntoChunks(character.code);
+
       window.electron.ipcRenderer.sendMessage(
         'load',
         [
           '-rp',
           '-lc',
-          character.code.slice(0, character.code.length / 2),
-          character.code.slice(
-            character.code.length / 2,
-            character.code.length,
-          ),
+          ...loadCodeChunks,
           '-le',
           ...extraLines.split('\n'),
         ],
