@@ -8,7 +8,23 @@ import {
 } from 'react';
 import { useSettingsContext } from './settingsContext';
 import { Class } from './main/load';
-import { splitIntoChunks } from './main/util'
+
+/**
+ * 
+ * @param loadCode The raw TEVE load code saved in wc3 documents.
+ * @param chunkSize The max size of an ingame chat message in wc3.
+ * @returns An array of strings, each containing a chunk of the load code. Handles load codes no matter the length.
+ */
+function splitIntoChunks(loadCode: string): string[] {
+  const result: string[] = [];
+  const chunkSize = 120;
+    
+  for (let i = 0; i < loadCode.length; i += chunkSize) {
+      result.push(loadCode.slice(i, i + chunkSize));
+  }
+  
+  return result;
+}
 
 interface CharacterContext {
   allClasses: Class[];
