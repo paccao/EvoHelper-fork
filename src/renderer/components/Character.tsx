@@ -1,7 +1,7 @@
 import { FC, useMemo, useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Button } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import Box from '@mui/material/Box';
@@ -16,6 +16,7 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import { ItemIconAndTitle } from './Item';
 import { evoItems } from '../../constants/items';
 import { lightBlue } from '@mui/material/colors';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Tooltip from '@mui/material/Tooltip';
 
 
@@ -59,6 +60,10 @@ export const Character: FC = () => {
 
   return (
     <div>
+      <IconButton style={{ left: -10 }} component={Link} to="/characters">
+        <ArrowBackIcon />
+        <Typography variant="caption">Go back</Typography>
+      </IconButton>
       <Typography variant="h6">
         {character.hero} {character.level && ` - ${character.level} level`}
       </Typography>
